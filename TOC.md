@@ -15,12 +15,12 @@
 13. Tuples
 14. Records
 15. ErrorHandling
-16. Modules
-17. WebApp Architecture
-18. PackageManager
-19. Messages
-20. Commands
-21. Subscriptions
+16. WebApp Architecture
+17. PackageManager
+18. Messages
+19. Commands
+20. Subscriptions
+
 
 <!-- 
 
