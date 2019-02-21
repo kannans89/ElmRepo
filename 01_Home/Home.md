@@ -2,7 +2,9 @@
 
 Elm is a pure functional programming language. It simplifies the complex functional programming concepts ,this makes it easy to learn. It is a programming language as well as an  application development framework .
 
-This tutorial adopts a simple and practical approach to describe the concepts of Rust programming.
+// why is elm used ?
+
+This tutorial adopts a simple and practical approach to describe the concepts of Elm programming.
 
 ## Audience
 
