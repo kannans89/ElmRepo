@@ -21,7 +21,6 @@
 19. Commands
 20. Subscriptions
 
-
 <!-- 
 
 Error Handling : https://guide.elm-lang.org/error_handling/
