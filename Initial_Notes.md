@@ -20,7 +20,7 @@ Functional Languages have following features
 7. List,Set,Tuple
 8. Pattern Matching
 
-Elm contains all of these features , so its a pure functional programming language.Elm simplifies and abstracts away these concepts into the language so programmer doesn't get lost in the complex concepts. 
+Elm contains all of these features , so its a pure functional programming language.Elm simplifies and abstracts away these concepts into the language so programmer doesn't get lost in the complex concepts.
 
 Elm mainly targets front end developers.Elm helps programmers to debug code by giving very friendly error messages compared to other functional programming languages.
 
