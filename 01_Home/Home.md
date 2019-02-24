@@ -1,9 +1,8 @@
 # Elm Tutorial
 
-Elm is a pure functional programming language that compiles to javascript. It simplifies the complex functional programming concepts ,this makes it easy to learn. It is a programming language as well as an  application  framework for modern software development.
+Elm is a pure functional programming language that compiles to javascript. It simplifies the complex functional programming concepts ,this makes it easy to learn. It is a programming language as well as an  application  framework.Elm is designed specifically for web frontend with the unique feature of no Runtime exceptions.
 
-// why is elm used ? for eg. html for designing .. elm for ??
-Elm is designed specifically for web frontend with the unique feature of no Runtime exceptions.
+<!-- // why is elm used ? for eg. html for designing .. elm for ?? -->
 
 This tutorial adopts a simple and practical approach to describe the concepts of Elm programming.
 
