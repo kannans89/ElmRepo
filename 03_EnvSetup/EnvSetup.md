@@ -16,4 +16,7 @@ Double click the **installer-for-windows.exe** file ,the following window will a
 
 Follow the simple steps and once the wizard completes installation you will see the completed screen as shown below
 
-![]()
+![complete](https://github.com/kannans89/ElmRepo/blob/master/images/02_Installation.PNG?raw=true)
+
+you can verify after installation by opening the windows terminal and typeing command `elm repl` as shown
+
