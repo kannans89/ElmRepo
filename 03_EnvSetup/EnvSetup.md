@@ -20,3 +20,4 @@ Follow the simple steps and once the wizard completes installation you will see 
 
 you can verify after installation by opening the windows terminal and typeing command `elm repl` as shown
 
+![elm repl](https://github.com/kannans89/ElmRepo/blob/master/images/03_elm_repl.PNG?raw=true)
