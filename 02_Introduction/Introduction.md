@@ -1,6 +1,6 @@
 # Introduction
 
-Elm was Designed by Evan Czaplicki in 2012 . It is a functional programming language that compiles to javascript .It is also a  web frontend  framework which is fast,testable,maintainable, and with no Runtime exceptions.In javascript errors because of  `null or undefined , undefined is not a function ` are very common and hard to debug.This is where elm comes in
+Elm was Designed by Evan Czaplicki in 2012 . It is a functional programming language that compiles to javascript .It is also a  web frontend  framework which is fast,testable,maintainable, and with no Runtime exceptions. In javascript errors because of  `null or undefined , undefined is not a function ` are very common and hard to debug.This is where elm comes in
 
 <!-- // what ?? why elm??
 //Practical Applications
