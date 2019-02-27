@@ -33,6 +33,15 @@ The examples in this tutorial we will be using VS Code editor. To support elm in
 
 ![vscodeExtension](https://github.com/kannans89/ElmRepo/blob/master/images/04_vscode_extension.PNG?raw=true)
 
+## Elm REPL
+
+REPL stands for read-eval-print-loop.The REPL lets you interact with Elm values and functions in your terminal.
+Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below
+
+![REPL](https://github.com/kannans89/ElmRepo/blob/master/images/02_repl.PNG?raw=true)
+
+use command `:exit` to exit REPL and return back to terminal.
+
 <!--
 
 If you are on Mac or Windows, you can use the installers to get everything set up easily

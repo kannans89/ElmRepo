@@ -60,9 +60,9 @@ Comments are a way to improve the readability of a program. Comments can be used
 
 Elm supports the following types of comments −
 
-Single-line comments ( `--` ) : Any text between a `--` and the end of a line is treated as a comment
+- Single-line comments ( `--` ) : Any text between a `--` and the end of a line is treated as a comment
 
-Multi-line comments (`{- -}`) − These comments may span multiple lines.
+- Multi-line comments (`{- -}`) − These comments may span multiple lines.
 
 Example
 
