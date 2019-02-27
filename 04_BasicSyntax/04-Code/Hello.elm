@@ -1,6 +1,13 @@
-module Hello exposing(...)
+-- creating a module with name Hello
+--module Hello exposing(..)
 
+-- importing Html module and function text
 import Html exposing (text)
 
-main = 
- text "hello World"
+-- create main method
+main =
+-- invoke text function
+ text "Howdy2 Elm from TutorialsPoint"
+ {- 
+  a multi line comment
+ -}
