@@ -1,10 +1,39 @@
 # Environment Setup
 
-In this chapter we will discuss the installation of Elm in
+In this chapter we will discuss the installation of Elm.
 
-1. Windows
-2. Mac
-3. Anywhere(using node/npm)
+## Windows/Mac/Linux
+
+Installation of Elm is simple and straight forward.Since elm is to be compiled to javascript. We need to have **node** installed on the target machine.
+
+Follow Tutorialspoint nodejs course to setup node and npm from here  [Node setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
+
+Install `elm` globally once node and npm is installed .Use  the following command
+
+Note that at time of writing the course elm stable version is  **0.18** , so we will be installing this version
+
+```javascript
+npm install -g elm@0.18
+```
+
+![start](https://github.com/kannans89/ElmRepo/blob/master/images/01_Installation_step1.PNG?raw=true)
+
+After installation you can verify the version on terminal as below
+
+```javascript
+
+C:\Users\dell>elm --version
+0.18.0
+
+```
+
+## Configuring Editor / VisualStudio Code
+
+The examples in this tutorial we will be using VS Code editor. To support elm in vscode the following extension should be installed.Search for *elm* in extension manager as shown.
+
+![vscodeExtension](https://github.com/kannans89/ElmRepo/blob/master/images/04_vscode_extension.PNG?raw=true)
+
+<!--
 
 If you are on Mac or Windows, you can use the installers to get everything set up easily
 
@@ -34,17 +63,5 @@ Once you launch the installer you will get following screen
 
 complete the installation wizard by selecting the default settings.
 
-## Windows/Mac/Linux/AnyWhere
 
-If you are on Mac or Windows, you can use the installers for easy installation. Another option to install elm in any platform is using *node and npm*.
-
-Follow tutorialspoint nodejs course to setup node and npm from here  [Node setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
-
-Install `elm` globally once node and npm is installed .Use  the following command
-`npm install -g elm`
-
-## Configuring Editor / VisualStudio Code
-
-The examples in this tutorial we will be using VS Code editor. To support elm in vscode the following extension should be installed.Search for *elm* in extension manager as shown.
-
-(https://github.com/kannans89/ElmRepo/blob/master/images/04_vscode_extension.PNG?raw=true)
+ -->
