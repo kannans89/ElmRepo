@@ -73,3 +73,44 @@ below example we are updating multiple fields of a record
 >
 
 ```
+
+### Types alias
+
+Type alias is defining a schema for a record. This means what are the attributes allowed in a record. So programmer will not make mistake of missing any specific attribute while assigning values for example if developer2 have only name by mistake if location is not assigned ,compiler will not give error.
+
+```javascript
+> developer1 = {name="bhagavati",location="hyderabad"}
+{ name = "bhagavati", location = "hyderabad" }
+    : { location : String, name : String }
+> developer2 = {name="kannan"}
+{ name = "kannan" } : { name : String }
+
+```
+
+So  let us see how to use type alias
+
+```javascript
+> type alias Developer = { name:String,location:String,age:Int}
+> dev1 = Developer "kannan" "Mumbai" 20
+{ name = "kannan", location = "Mumbai", age = 20 } : Repl.Developer
+> dev2 = Developer "mohtashim" "hyderabad" 20
+{ name = "mohtashim", location = "hyderabad", age = 20 } : Repl.Developer
+
+```
+
+Now if you forget to type location and age , the staement returns a function as shown
+
+```javascript
+> dev3 = Developer "Bhagavati"
+<function> : String -> Int -> Repl.Developer
+
+```
+
+since it returns a function which have two remaining parameters String for location and Int for age. Now we can invoke function as shown passing in location `Pune` and age `25`
+
+```javascript
+ > dev3 "Pune" 25
+{ name = "Bhagavati", location = "Pune", age = 25 } : Repl.Developer
+
+```
+
