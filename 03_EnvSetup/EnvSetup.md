@@ -1,16 +1,16 @@
 # Environment Setup
 
-In this chapter we will discuss the installation of Elm.
+This chapter discusses steps to install Elm on Windows, Mac and Linux platforms.
 
-## Windows/Mac/Linux
+## Local Environment Setup
 
-Installation of Elm is simple and straight forward.Since elm is to be compiled to javascript. We need to have **node** installed on the target machine.
+### Step 1: Install **node**
+Since `elm` is compiled to Javascript,the target machine should have **node** installed.
 
-Follow Tutorialspoint nodejs course to setup node and npm from here  [Node setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
+Refer to TutorialsPoint nodejs course for steps to setup **node** and **npm** [Node setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
 
-Install `elm` globally once node and npm is installed .Use  the following command
-
-Note that at time of writing the course elm stable version is  **0.18** , so we will be installing this version
+### Step 2: Install `elm`
+Execute the following command on the terminal to install `elm`.Note that the stable version of `elm` is **0.18** at time of writing this course
 
 ```javascript
 npm install -g elm@0.18
@@ -18,29 +18,63 @@ npm install -g elm@0.18
 
 ![start](https://github.com/kannans89/ElmRepo/blob/master/images/01_Installation_step1.PNG?raw=true)
 
-After installation you can verify the version on terminal as below
+After installation,execute the following command to verify the version of `elm`
 
 ```javascript
-
 C:\Users\dell>elm --version
 0.18.0
-
 ```
 
-## Configuring Editor / VisualStudio Code
+### Step 3:Install the Editor
+The development environment used here is Visual Studio Code (Windows platform).
 
-The examples in this tutorial we will be using VS Code editor. To support elm in vscode the following extension should be installed.Search for *elm* in extension manager as shown.
+Visual Studio Code is an open source IDE from Visual Studio. It is available for Mac OS X, Linux and Windows platforms. VScode is available at [Visual Studio Code](https://code.visualstudio.com/)
+
+**Installation on Windows**
+
+Step 1 − Download [Visual Studio Code](https://code.visualstudio.com/) for Windows.
+ <!--Screenshot here -->
+ 
+Step 2 − Double-click on VSCodeSetup.exe Launch Setup Process to launch the setup process. This will only take a minute.
+ <!--Screenshot here -->
+ 
+Step 3 − A screenshot of the IDE is given below.
+ <!--Screenshot here -->
+ 
+Step 4 − You may directly traverse to the file’s path by right clicking on the file → open in command prompt.Similarly, the Reveal in  Explorer option shows the file in the File Explorer.
+ <!--Screenshot here -->
+ 
+**Installation on Mac OS X**
+
+Visual Studio Code’s Mac OS X specific installation guide can be found at [VSCode Installation-MAC](https://code.visualstudio.com/Docs/editor/setup)
+
+**Installation on Linux**
+
+Visual Studio Code’s Linux specific installation guide can be found at [VSCode Installation-Linux](https://code.visualstudio.com/Docs/editor/setup)
+
+### Step 4: Install the `elm` Extension
+
+Install the `elm` extension in VSCode as shown below. 
 
 ![vscodeExtension](https://github.com/kannans89/ElmRepo/blob/master/images/04_vscode_extension.PNG?raw=true)
 
+
 ## Elm REPL
 
-REPL stands for read-eval-print-loop.The REPL lets you interact with Elm values and functions in your terminal.
-Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below
+REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. 
+
+Elm comes bundled with a REPL environment. It performs the following tasks − <!--verify if explanations are correct-->
+
+- Read − Reads user's input, parses the input into JavaScript data-structure, and stores in memory.
+- Eval − Takes and evaluates the data structure.
+- Print − Prints the result.
+- Loop − Loops the above command until the user presses ctrl-c twice.
+
+Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below: 
 
 ![REPL](https://github.com/kannans89/ElmRepo/blob/master/images/02_repl.PNG?raw=true)
 
-use command `:exit` to exit REPL and return back to terminal.
+Use the command `:exit` to exit REPL and return back to the terminal.
 
 <!--
 
