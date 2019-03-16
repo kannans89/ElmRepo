@@ -6,11 +6,10 @@ This chapter discusses steps to install Elm on Windows, Mac and Linux platforms.
 
 ### Step 1: Install **node**
 Since `elm` is compiled to Javascript,the target machine should have **node** installed.
-
 Refer to TutorialsPoint nodejs course for steps to setup **node** and **npm** [Node setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
 
 ### Step 2: Install `elm`
-Execute the following command on the terminal to install `elm`.Note that the stable version of `elm` is **0.18** at time of writing this course
+Execute the following command on the terminal to install `elm`.Note that the stable version of `elm` was  **0.18** at time of writing this course.
 
 ```javascript
 npm install -g elm@0.18
