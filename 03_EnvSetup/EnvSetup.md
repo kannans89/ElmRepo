@@ -31,21 +31,15 @@ Visual Studio Code is an open source IDE from Visual Studio. It is available for
 
 **Installation on Windows**
 
-Step 1 − Download [Visual Studio Code](https://code.visualstudio.com/) for Windows.
- <!--Screenshot here -->
- 
-![vscode](https://www.tutorialspoint.com/typescript/images/download_visual_studio_code.jpg
-)
- 
-Step 2 − Double-click on VSCodeSetup.exe to launch the setup process. This will only take a minute.
+1. Download [Visual Studio Code](https://code.visualstudio.com/) for Windows.  
+
+2. Double-click on VSCodeSetup.exe to launch the setup process. This will only take a minute.
  <!--Screenshot here -->
  ![vscode](
 https://www.tutorialspoint.com/typescript/images/setup_wizard.jpg
 )
- 
-<!-- Step 3 − A screenshot of the IDE is given below.  ![ide](  https://www.tutorialspoint.com/typescript/images/ide.jpg)-- >
- 
-Step 3 − You may directly traverse to the file’s path by right clicking on  File → Open in command prompt.Similarly, the Reveal in  Explorer option shows the file in the File Explorer.
+  
+3.  You may directly traverse to the file’s path by right clicking on  File → Open in command prompt.Similarly, the Reveal in  Explorer option shows the file in the File Explorer.
  <!--Include screenshot for elm file -->
   ![travers_path](
  https://www.tutorialspoint.com/typescript/images/traverse_files_path.jpg)
