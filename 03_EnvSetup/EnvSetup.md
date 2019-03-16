@@ -50,7 +50,7 @@ Step 3 − A screenshot of the IDE is given below.
   https://www.tutorialspoint.com/typescript/images/ide.jpg
 )
  
-Step 4 − You may directly traverse to the file’s path by right clicking on the file → open in command prompt.Similarly, the Reveal in  Explorer option shows the file in the File Explorer.
+Step 4 − You may directly traverse to the file’s path by right clicking on  File → Open in command prompt.Similarly, the Reveal in  Explorer option shows the file in the File Explorer.
  <!--Screenshot here -->
   ![travers_path](
  https://www.tutorialspoint.com/typescript/images/traverse_files_path.jpg)
@@ -79,13 +79,13 @@ Elm comes bundled with a REPL environment. It performs the following tasks − <
 - Read − Reads user's input, parses the input into elm data-structure, and stores in memory.
 - Eval − Takes and evaluates the data structure.
 - Print − Prints the result.
-- Loop − Loops the above command until the user exits.
+- Loop − Loops the above command until the user exits. Use the command `:exit` to exit REPL and return back to the terminal.
 
 Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below: 
 
 ![REPL](https://github.com/kannans89/ElmRepo/blob/master/images/02_repl.PNG?raw=true)
 
-Use the command `:exit` to exit REPL and return back to the terminal.
+
 
 <!--
 
