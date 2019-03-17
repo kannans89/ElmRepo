@@ -4,7 +4,10 @@ This chapter discusses how to write a simple program in elm.
 
 ## Step 1: Create a directory HelloApp in VSCode. Create a file - Hello.elm in this directory. 
 
+![HelloApp](https://github.com/kannans89/ElmRepo/blob/master/images/08_HelloApp.PNG?raw=true)
 <!--explain-->
+The above diagram shows project folder HelloApp and terminal opened in vscode.
+
 ## Step 2: Install the necessary elm packages
 
 The package manager in elm is `elm-package`.  
