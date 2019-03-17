@@ -6,7 +6,7 @@ Elm was Designed by Evan Czaplicki in 2012 . It is a functional programming lang
 //Practical Applications
 //Advantages -->
 
-## Why Elm ?
+## Why Elm
 
 Elm eliminates most of the common problems faced by frontend developers.This include
 

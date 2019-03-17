@@ -47,8 +47,9 @@ https://www.tutorialspoint.com/typescript/images/setup_wizard.jpg
 
  <!--Include screenshot for elm file -->
   ![travers_path](
- https://www.tutorialspoint.com/typescript/images/traverse_files_path.jpg)
- 
+      https://github.com/kannans89/ElmRepo/blob/master/images/07_open_terminal.png?raw=true
+ )
+
 **Installation on Mac OS X**
 
 Visual Studio Code’s Mac OS X specific installation guide can be found at [VSCode Installation-MAC](https://code.visualstudio.com/Docs/editor/setup)
@@ -59,14 +60,13 @@ Visual Studio Code’s Linux specific installation guide can be found at [VSCode
 
 ### Step 4: Install the `elm` Extension
 
-Install the `elm` extension in VSCode as shown below. 
+Install the `elm` extension in VSCode as shown below.
 
 ![vscodeExtension](https://github.com/kannans89/ElmRepo/blob/master/images/04_vscode_extension.PNG?raw=true)
 
-
 ## Elm REPL
 
-REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. 
+REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode.
 
 Elm comes bundled with a REPL environment. It performs the following tasks − <!--verify if explanations are correct-->
 
@@ -75,11 +75,14 @@ Elm comes bundled with a REPL environment. It performs the following tasks − <
 - Print − Prints the result.
 - Loop − Loops the above command until the user exits. Use the command `:exit` to exit REPL and return back to the terminal.
 
-Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below: 
+Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below:
+
+1. `Reads` numbers 10 and 20 from user
+2. `Evaluates` using the `+` operator
+3. `Prints` result as 30
+4. `Loops` for next user input .Here we exits out from loop.
 
 ![REPL](https://github.com/kannans89/ElmRepo/blob/master/images/02_repl.PNG?raw=true)
-
-
 
 <!--
 
@@ -110,6 +113,5 @@ Once you launch the installer you will get following screen
 ![start](https://github.com/kannans89/ElmRepo/blob/master/images/01_Installation_step1.PNG?raw=true)
 
 complete the installation wizard by selecting the default settings.
-
 
  -->
