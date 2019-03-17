@@ -25,6 +25,7 @@ The following files/folders are added to the project directory on installing the
 
  This is shown in the screenshot below-
  <!-- screenshot with the above files in the project directory-->  
+ ![HelloApp](https://github.com/kannans89/ElmRepo/blob/master/images/09_HelloApp.PNG?raw=true)
  
 ## Step 3: Add the following code to the Hello.elm file
 
@@ -45,6 +46,7 @@ The above program will display a string message `Hello Elm from TutorialsPoint` 
 The `main` method is the entry point to a program. The `main` method invokes the `text` function and passes a string value to it.  
 
 ## Step 3: Compile the project
+
 Execute the following command in VSCode terminal window.
 <!--update path to the proj folder in the command>-->   
 
@@ -54,7 +56,7 @@ The output of the above command is as shown below-
 
 ```javascript
 //update path to the proj folder in the command elm make
-E:\ElmWorks\>elm make Hello.elm
+C:\Users\dell\elm\HelloApp>elm make Hello.elm
 Success! Compiled 38 modules.
 Successfully generated index.html
 
