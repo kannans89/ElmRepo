@@ -74,6 +74,12 @@ False : Bool
 True : Bool
 > 1==2
 False : Bool
+> 1 /= 2   -- not equal
+True : Bool
+> not True
+False : Bool
+> not False
+True : Bool
 ```
 
 ## Comparable Types
