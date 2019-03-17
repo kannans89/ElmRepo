@@ -53,14 +53,40 @@ C:\Users\admin>elm repl
 
 ```
 
-## Comparable Types
+## Boolean Type
 
-Comparison operators like >= or < work with comparable types. These are defined as numbers, characters, strings, and lists, tuples.On both sides of the comparison, the comparable types must be the same.Bool type can have value `True` or `False`
+The Boolean data type in Elm supports only two values – True and False. The keyword `Bool` is used to represent a boolean type.
 
 |Sr No |  type    | Example|
 |:----:|:----------|:-------|
-| 1    | Bool    | 7>2 gives True result as Bool  
-| 2    | Bool    | 7<2 gives False result as Bool
+| 1    | Bool  | True / False     |
+
+```javascript
+C:\Users\dell\elm>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> True
+True : Bool
+> False
+False : Bool
+> 1==1
+True : Bool
+> 1==2
+False : Bool
+```
+
+## Comparable Types
+
+Comparison operators like `>=` or `<` work with comparable types. These are defined as numbers, characters, strings, and lists, tuples.On both sides of the comparison, the comparable types must be the same.
+
+|Sr No |  Comparable type    | Example|
+|:----:|:----------|:-------|
+| 1    | number    | 7>2 gives True result
+| 2    | character    | 'a' =='b' gives False
+| 3    | string    | "hello" =="hello" gives True
+| 4   | tuple    | (1,"One")==(1,"One") gives True
+| 5   | list    | [1,2]==[1,2] gives True
 
 Open the elm repl and try examples shown below
 
