@@ -5,10 +5,12 @@ This chapter discusses steps to install Elm on Windows, Mac and Linux platforms.
 ## Local Environment Setup
 
 ### Step 1: Install **node**
+
 Since `elm` is compiled to Javascript,the target machine should have **node** installed.
 Refer to TutorialsPoint nodejs course for steps to setup **node** and **npm** [Node setup](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
 
 ### Step 2: Install `elm`
+
 Execute the following command on the terminal to install `elm`.Note that the stable version of `elm` was  **0.18** at time of writing this course.
 
 ```javascript
@@ -25,6 +27,7 @@ C:\Users\dell>elm --version
 ```
 
 ### Step 3:Install the Editor
+
 The development environment used here is Visual Studio Code (Windows platform).
 
 Visual Studio Code is an open source IDE from Visual Studio. It is available for Mac OS X, Linux and Windows platforms. VScode is available at [Visual Studio Code](https://code.visualstudio.com/)
@@ -33,13 +36,15 @@ Visual Studio Code is an open source IDE from Visual Studio. It is available for
 
 1. Download [Visual Studio Code](https://code.visualstudio.com/) for Windows.  
 
-2. Double-click on VSCodeSetup.exe to launch the setup process. This will only take a minute.
+2. Double-click on VSCodeSetup.exe to launch the setup process.This will only take a minute.
+
  <!--Screenshot here -->
  ![vscode](
 https://www.tutorialspoint.com/typescript/images/setup_wizard.jpg
 )
   
 3.  You may directly traverse to the file’s path by right clicking on  File → Open in command prompt.Similarly, the Reveal in  Explorer option shows the file in the File Explorer.
+
  <!--Include screenshot for elm file -->
   ![travers_path](
  https://www.tutorialspoint.com/typescript/images/traverse_files_path.jpg)
