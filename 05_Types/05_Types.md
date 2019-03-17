@@ -4,17 +4,17 @@ The Type System represents the different types of values supported by the langua
 
 Elm is a statically typed language.Elm has types that are similar to those from other languages
 
-## Primitives
+## Number
 
- The type `number` can be either `Float or Int`. Conversions are performed automatically depending on the operator. For example, the division of two integers with `/` returns a float.For integer division we need to use `//` operator.
+The `number` data type represents numeric values. The Elm type system supports the following numeric types-
 
 |Sr No |  type    | Example|
 |:----:|:----------|:-------|
-| 1    | number  | 7 is number type     |
-| 2    | Float     | 7`/`2 gives 3.5 result as Float      |
-| 3    | Int   | 7`//`2 gives 3 result as Int     |
+| 1    | number : Stores any number| 7 is number type     |
+| 2    | Float  : Stores fractional values   | 7`/`2 gives 3.5 result as Float      |
+| 3    | Int    : Stores non-fractional values  | 7`//`2 gives 3 result as Int     |
 
-Open the elm repl and try examples shown below
+The type `number` accomodates both fractional and non-fractional values. This is shown in the example below:  
 
 ```javascript
 C:\Users\admin>elm repl

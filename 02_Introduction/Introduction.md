@@ -1,6 +1,13 @@
 # Introduction
 
-Elm was Designed by Evan Czaplicki in 2012 . It is a functional programming language that compiles to javascript .It is also a  web frontend  framework which is fast,testable,maintainable, and with no Runtime exceptions. In javascript errors because of  `null or undefined , undefined is not a function ` are very common and hard to debug.This is where elm comes in
+Elm is a functional programming language. It was Designed by Evan Czaplicki in 2012 . Elm is specifically used for designing front end of web applications.
+
+Elm compiles to Javascript and runs in the browser.It is fast,testable,maintainable, and with no Runtime exceptions.  
+
+Some practical applications of the Elm programming platform include -
+- Games
+- Graphics
+- Single Page Applications
 
 <!-- // what ?? why elm??
 //Practical Applications
@@ -8,23 +15,23 @@ Elm was Designed by Evan Czaplicki in 2012 . It is a functional programming lang
 
 ## Why Elm
 
-Elm eliminates most of the common problems faced by frontend developers.This include
+Elm eliminates most of the common problems faced by frontend developers.This includes
 
 ### 1. No Runtime Exceptions
 
- In Elm it is extremely common to have no runtime exceptions.Instead of runtime exceptions, you have compile time errors.Elm ensures that errors will happen only at compile time.
+ Elm is a statically typed language. All possible errors are validated and corrected at compile-time. This makes it possible to have no runtime exceptions.
 
 ### 2. Developer friendly error messages
 
- Elm's compiler is designed to provide very specific and human-friendly compile time errors to developers unlike other languages.They also tend to include hints such as links to recommended design documentations
+ Unlike other programming languages, Elm's compiler is designed to provide very specific and developer-friendly error messages at compile time.The error messages also include hints such as links to recommended design documentations
 
-### 3. Easy Refactoring
+### 3. Easy to Test  
 
-Elm is statically typed language .It is easier to write  tests by isolating one function from another in Elm.Elm’s types ensure that you won’t break anything when you need to make a big change. This make it easy to make changes in large codebase.
+Each Elm function can be tested in isolation of all others.This makes programs written in Elm easily testable.
 
-### 4. Sematic Versioning
+### 4. Automatic Sematic Versioning
 
-Elm emphasis on maintainability means you don’t have to worry that beginners will silently break existing codebases. This is achieved as Elm packages are automatically enforced to semantic versioning.
+Elm enforces automatic semantic versioning of packages. This ensures that a patch change does not crash an already running application.
 
 ### 5. Reusable Code
 

@@ -75,7 +75,11 @@ Elm comes bundled with a REPL environment. It performs the following tasks − <
 - Print − Prints the result.
 - Loop − Loops the above command until the user exits. Use the command `:exit` to exit REPL and return back to the terminal.
 
-Open terminal and type command `elm repl` . A simple example to add two numbers in REPL is shown below:
+A simple example to add two numbers in REPL is shown below:
+
+Open the VSCode terminal and type the command `elm repl`  
+
+The `repl` terminal waits for the user to enter some input. Enter the following expression `10 + 20`. The `repl` environment processes the input as given below:  
 
 1. `Reads` numbers 10 and 20 from user
 2. `Evaluates` using the `+` operator
