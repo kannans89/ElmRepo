@@ -32,12 +32,13 @@ C:\Users\admin>elm repl
 
 ## Strings and Chars
 
-Strings are defined with a double quote `"` and characters with a single quote `'`.They cannot be concatenated without conversion functions,
+The `String` data type is used to represent a sequence  of characters.  The `Char` data type is used to represent a single character. `String` values are defined within a double quote `"` and `Char` values are enclosed within a single quote `'`.
+They cannot be concatenated without conversion functions,
 
 |Sr No |  type    | Example|
 |:----:|:----------|:-------|
-| 1    | String  | "TutorialsPoint"      |
-| 2   | Char  | 'T'      |
+| 1    | String  : Stores a sequence of characters | "TutorialsPoint"      |
+| 2   | Char     : Stores a single character value  | 'T'      |
 
 Open the elm repl and try examples shown below
 
