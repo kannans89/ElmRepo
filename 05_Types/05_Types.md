@@ -81,8 +81,17 @@ True : Bool
 False : Bool
 > not False
 True : Bool
-```
+```  
 
+## Structured Data types
+Structured data types can be used to store multiple values in a structured format.Elm supports the following structured data types:
+- Tuple
+- List
+- Record
+These will be discussed in detail in the upcoming chapters.
+
+
+<!--add in chap operators 
 ## Comparable Types
 
 Comparison operators like `>=` or `<` work with comparable types. These are defined as numbers, characters, strings, and lists, tuples.On both sides of the comparison, the comparable types must be the same.
@@ -121,3 +130,4 @@ True : Bool
 >
 
 ```
+-- >
