@@ -45,7 +45,7 @@ The above program will display a string message `Hello Elm from TutorialsPoint` 
 
 The `main` method is the entry point to a program. The `main` method invokes the `text` function and passes a string value to it.  
 
-## Step 3: Compile the project
+## Step 4: Compile the project
 
 Execute the following command in VSCode terminal window.
 <!--update path to the proj folder in the command>-->   
@@ -63,7 +63,7 @@ Successfully generated index.html
 ```
 The above command will generate an **index.html** file. The elm compiler converts `.elm` file to Javascript and embeds it in the **index.html** file.
 
-## Step 4: Open the index.html in the browser
+## Step 5: Open the index.html in the browser
 
 Open the `index.html` file in any browser . The output will be as shown below
 
