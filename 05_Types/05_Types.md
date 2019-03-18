@@ -14,7 +14,11 @@ The `number` data type represents numeric values. The Elm type system supports t
 | 2    | Float  : Stores fractional values   | 7`/`2 gives 3.5 result as Float      |
 | 3    | Int    : Stores non-fractional values  | 7`//`2 gives 3 result as Int     |
 
-The type `number` accomodates both fractional and non-fractional values. This is shown in the example below:  
+The type `number` accomodates both fractional and non-fractional values.  
+
+Open the elm repl and try the examples given below-
+
+
 
 ```javascript
 C:\Users\admin>elm repl
@@ -30,17 +34,17 @@ C:\Users\admin>elm repl
 >
 ```
 
-## Strings and Chars
+## String and Char
 
 The `String` data type is used to represent a sequence  of characters.  The `Char` data type is used to represent a single character. `String` values are defined within a double quote `"` and `Char` values are enclosed within a single quote `'`.
-They cannot be concatenated without conversion functions,
+
 
 |Sr No |  type    | Example|
 |:----:|:----------|:-------|
 | 1    | String  : Stores a sequence of characters | "TutorialsPoint"      |
 | 2   | Char     : Stores a single character value  | 'T'      |
 
-Open the elm repl and try examples shown below
+Open the elm repl and try the examples given below-
 
 ```javascript
 C:\Users\admin>elm repl
@@ -60,7 +64,9 @@ The Boolean data type in Elm supports only two values – True and False. The ke
 
 |Sr No |  type    | Example|
 |:----:|:----------|:-------|
-| 1    | Bool  | True / False     |
+| 1    | Bool : Stores values True or False | 1==1 returns True   |  
+
+Open the elm repl and try the examples given below-
 
 ```javascript
 C:\Users\dell\elm>elm repl
@@ -84,10 +90,12 @@ True : Bool
 ```  
 
 ## Structured Data types
-Structured data types can be used to store multiple values in a structured format.Elm supports the following structured data types:
+Structured data types can be used to store multiple values in a structured format.Elm supports the following structured data types:  
+
 - Tuple
 - List
-- Record
+- Record  
+
 These will be discussed in detail in the upcoming chapters.
 
 
