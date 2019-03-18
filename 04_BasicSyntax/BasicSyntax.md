@@ -63,7 +63,7 @@ Successfully generated index.html
 ```
 The above command will generate an **index.html** file. The elm compiler converts `.elm` file to Javascript and embeds it in the **index.html** file.
 
-## Step 5: Open the index.html in the browser
+## Step 5: Open index.html file in the browser
 
 Open the `index.html` file in any browser . The output will be as shown below
 
