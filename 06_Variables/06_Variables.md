@@ -4,16 +4,15 @@ A variable is a named storage that programs can manipulate.Simply put, a variabl
 
 ## Variable Naming-Rules
 
-The name of a variable can be composed of letters, digits, and the underscore character.It must begin with either a letter or an underscore.Upper and lowercase letters are distinct because Elm is case-sensitive .
+The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore.Upper and lowercase letters are distinct because Elm is case-sensitive .
 
 ## Syntax
 
 The data type is not required while declaring a variable in Elm. The data type is inferred from the value assigned to the variable.
-
 The syntax for declaring a variable is given below.
 
 ```elm
-   variable_name=value;-- no type specified
+   variable_name=value-- no type specified
 ```
 
 ### Example
@@ -76,8 +75,26 @@ Maybe <http://elm-lang.org/docs/syntax> can help you figure it out.
 
 ```
 
-### Step 1: Create a Variables.elm file in any Folder
+### Step 1: Create a Variables.elm file in VariablesApp Folder
 
-![]()
+Add following contents to the file .
 
-### Step 2: Import Variables file into the REPL
+```elm
+   module Variables exposing (..)
+   message:String -- type annotation
+   message = "Variables can have types in Elm"
+```
+
+In the file we have added a variable message of type string
+
+![variablesApp](https://github.com/kannans89/ElmRepo/blob/master/images/10_Variables.PNG?raw=true)
+
+### Step 2: Import Variables module in  REPL
+
+In the visual studio terminal import the `Variables` as shown
+
+```elm
+module Variables exposing (..)
+message:String -- type annotation
+message = "Variables can have types in Elm"
+```
