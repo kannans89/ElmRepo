@@ -58,9 +58,9 @@ C:\Users\admin>elm repl
 
 ```
 
-## Boolean Type
+## Bool
 
-The Boolean data type in Elm supports only two values – True and False. The keyword `Bool` is used to represent a boolean type.
+The Bool data type in Elm supports only two values – True and False. The keyword `Bool` is used to represent a boolean value.
 
 |Sr No |  type    | Example|
 |:----:|:----------|:-------|
