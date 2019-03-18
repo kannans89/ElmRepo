@@ -21,7 +21,10 @@ The syntax for declaring a variable is given below.
 Use Elm repl to try this example. Here we used *company* and *location* as String variables and *rating* as Float variable
 
 ```javascript
-
+C:\Users\dell\elm>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+-------------------------------------------------------------------------------
 > company = "TutorialsPoint"
 "TutorialsPoint" : String
 > location = "Hyderabad"
@@ -30,3 +33,51 @@ Use Elm repl to try this example. Here we used *company* and *location* as Strin
 4.5 : Float
 
 ```
+
+When using elm repl if we need to split a single line use `\` syntax as shown
+
+```elm
+C:\Users\dell\elm>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> company \    -- firstLine
+|   = "TutorialsPoint"  -- secondLine
+"TutorialsPoint" : String
+> employee_count \     --firstLine
+|    = 50              -- secondLine
+50 : number
+> company
+"TutorialsPoint" : String
+> employee_count
+50 : number
+
+```
+
+## Type annotation
+
+In elm repl type annotation is not supported for variables. For example
+when we declare a variable with type `message:String` gives error.
+
+```elm
+C:\Users\dell\elm>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> message:String
+-- SYNTAX PROBLEM -------------------------------------------- repl-temp-000.elm
+
+A single colon is for type annotations. Maybe you want :: instead? Or maybe you
+are defining a type annotation, but there is whitespace before it?
+
+3|   message:String
+            ^
+Maybe <http://elm-lang.org/docs/syntax> can help you figure it out.
+
+```
+
+### Step 1: Create a Variables.elm file in any Folder
+
+![]()
+
+### Step 2: Import Variables file into the REPL
