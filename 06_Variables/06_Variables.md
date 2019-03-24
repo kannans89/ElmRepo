@@ -78,6 +78,7 @@ Maybe <http://elm-lang.org/docs/syntax> can help you figure it out.
 ### Step 1: Create a Variables.elm file in VariablesApp Folder
 
 Add following contents to the file .
+`(..)` exposes every function in this module
 
 ```elm
    module Variables exposing (..)
@@ -94,7 +95,7 @@ In the file we have added a variable message of type string
 In the visual studio terminal import the `Variables` as shown
 
 ```elm
-module Variables exposing (..)
+import Variables exposing (..)
 message:String -- type annotation
 message = "Variables can have types in Elm"
 ```

@@ -84,3 +84,24 @@ False : Bool
 True : Bool
 
 ```
+
+## Pipe Operator
+
+To understand pipe operator `|>`, let see an example where we have a list of different strings `["a","b","c"]` . Now we need a single string which is separated by `-`.Following example shows how to do that with `String.join`
+
+```elm
+> String.join "-" ["a","b","c","d","e","f"]
+"a-b-c-d-e-f" : String
+```
+
+Using a pipe operator `|>` we can chain multiple function calls and it is much clean and readable.
+
+```elm
+> ["a","b","c","d","e","f"] |> String.join "-"
+"a-b-c-d-e-f" : String
+> ["a","b","c","d","e","f"] |> List.reverse |> String.join "-"
+"f-e-d-c-b-a" : String
+
+```
+
+In the first example we are chaining the list to join method.In the second case same list is piped to reverse function and after the piped to join. So list is displayed in reversed and joined.

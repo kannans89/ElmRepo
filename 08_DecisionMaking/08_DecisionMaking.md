@@ -47,3 +47,17 @@ The **else…if** ladder is useful to test multiple conditions. Its syntax is gi
 "Outstanding" : String
 
 ```
+
+## Case statement
+
+using case statement we can simplify the `if then else` as shown. Note the value return in each case has to be of the same type.
+
+```elm
+> n = 10
+10 : number
+> case n of \
+|   0 -> "n is Zero" \
+|   _ -> "n is not Zero"
+"n is not Zero" : String
+
+```
