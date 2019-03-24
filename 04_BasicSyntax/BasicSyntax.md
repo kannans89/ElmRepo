@@ -89,3 +89,10 @@ Example
 -}
 
 ```
+
+## Lines and Indentation
+Elm provides no braces to indicate blocks of code for function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced. All statements within a block must be indented the same amount. For example −  
+
+However, the following block generates an error −  
+
+Thus, in Elm all the continuous lines indented with same number of spaces would form a block. 

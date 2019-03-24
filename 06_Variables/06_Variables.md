@@ -1,23 +1,72 @@
 # Variables
 
-A variable is a named storage that programs can manipulate.Simply put, a variable helps programs to store values. Variables in Elm are associated with a specific data type. The data type determines the size and layout of the variable's memory, the range of values that can be stored within that memory and the set of operations that can be performed on the variable.
+A variable, by definition, is “a named space in the memory” that stores values. In other words, it acts as a container for values in a program.A variable helps programs to store and manipulate values.  
+
+Variables in Elm are associated with a specific data type. The data type determines the size and layout of the variable's memory, the range of values that can be stored within that memory and the set of operations that can be performed on the variable.
 
 ## Variable Naming-Rules
 
-The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore.Upper and lowercase letters are distinct because Elm is case-sensitive .
+- Variable names can be composed of letters, digits, and the underscore character.  
+- Variable names cannot begin with a digit. It must begin with either a letter or an underscore.  
+- Upper and lowercase letters are distinct because Elm is case-sensitive .  
 
-## Syntax
+## Variable Declaration In Elm  
 
-The data type is not required while declaring a variable in Elm. The data type is inferred from the value assigned to the variable.
-The syntax for declaring a variable is given below.
+The type syntax for declaring a variable in Elm is given below:   
+
+### Syntax 1  
+
+```elm  
+    variable_name:data_type=value
+```
+The `:` syntax (knonw as type annotation) is used to associate the variable with a data type.  
+
+### Syntax 2  
+
+```elm  
+     variable_name=value-- no type specified
+```
+The data type is optional while declaring a variable in Elm.In this case, the data type of the variable is inferred from the value assigned to it.  
+
+### Example  
+This example uses VSCode editor to write an elm program and execute it using the elm repl. 
+
+### Step 1: Create a project folder - VariablesApp. Create a Variables.elm file in the project folder.
+
+Add the following contents to the file .  
 
 ```elm
-   variable_name=value-- no type specified
+   module Variables exposing (..) //Define a module and expose all contents in the module
+   message:String -- type annotation
+   message = "Variables can have types in Elm"
+```
+The program defines a module `Variables`. The name of a module must be the same as that of the elm program file. The `(..)` syntax is  used to expose all components in the module.  
+
+The program declares a variable `message` of the type `String`.  
+
+![variablesApp](https://github.com/kannans89/ElmRepo/blob/master/images/10_Variables.PNG?raw=true)
+
+### Step 2: Execute the program.  
+
+- Type the following command in the VSCode terminal to open the elm repl.  
+
+```elm
+elm repl
+```  
+- Execute the following elm statement in the REPL terminal.  
+
+```elm
+
+> import Variables exposing (..) --imports all components from the Variables module
+> message                        --Reads value in the message varaible and prints it to the REPL
+"Variables can have types in Elm":String
+> 
+
 ```
 
 ### Example
 
-Use Elm repl to try this example. Here we used *company* and *location* as String variables and *rating* as Float variable
+Use Elm repl to try the following example. 
 
 ```javascript
 C:\Users\dell\elm>elm repl
@@ -32,31 +81,9 @@ C:\Users\dell\elm>elm repl
 4.5 : Float
 
 ```
+Here, the variables *company* and *location* are  String variables and *rating* is a  Float variable.  
 
-When using elm repl if we need to split a single line use `\` syntax as shown
-
-```elm
-C:\Users\dell\elm>elm repl
----- elm-repl 0.18.0 -----------------------------------------------------------
- :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
---------------------------------------------------------------------------------
-> company \    -- firstLine
-|   = "TutorialsPoint"  -- secondLine
-"TutorialsPoint" : String
-> employee_count \     --firstLine
-|    = 50              -- secondLine
-50 : number
-> company
-"TutorialsPoint" : String
-> employee_count
-50 : number
-
-```
-
-## Type annotation
-
-In elm repl type annotation is not supported for variables. For example
-when we declare a variable with type `message:String` gives error.
+The elm repl does not support type annotation for variables. The following example throws an error if the data type is included while declaring a variable. 
 
 ```elm
 C:\Users\dell\elm>elm repl
@@ -75,27 +102,15 @@ Maybe <http://elm-lang.org/docs/syntax> can help you figure it out.
 
 ```
 
-### Step 1: Create a Variables.elm file in VariablesApp Folder
+To insert a line break while using the elm repl use the `\` syntax as shown below:  
 
-Add following contents to the file .
-`(..)` exposes every function in this module
 
 ```elm
-   module Variables exposing (..)
-   message:String -- type annotation
-   message = "Variables can have types in Elm"
-```
-
-In the file we have added a variable message of type string
-
-![variablesApp](https://github.com/kannans89/ElmRepo/blob/master/images/10_Variables.PNG?raw=true)
-
-### Step 2: Import Variables module in  REPL
-
-In the visual studio terminal import the `Variables` as shown
-
-```elm
-import Variables exposing (..)
-message:String -- type annotation
-message = "Variables can have types in Elm"
+C:\Users\dell\elm>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> company \    -- firstLine
+|   = "TutorialsPoint"  -- secondLine
+"TutorialsPoint" : String
 ```
