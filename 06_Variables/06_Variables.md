@@ -101,3 +101,16 @@ are defining a type annotation, but there is whitespace before it?
 Maybe <http://elm-lang.org/docs/syntax> can help you figure it out.
 
 ```
+
+To insert a line break while using the elm repl use the `\` syntax as shown below:  
+
+
+```elm
+C:\Users\dell\elm>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> company \    -- firstLine
+|   = "TutorialsPoint"  -- secondLine
+"TutorialsPoint" : String
+```
