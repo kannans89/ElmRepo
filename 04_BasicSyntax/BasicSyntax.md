@@ -91,8 +91,51 @@ Example
 ```
 
 ## Lines and Indentation
-Elm provides no braces to indicate blocks of code for function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced. All statements within a block must be indented the same amount. For example −  
 
-However, the following block generates an error −  
+Elm provides no braces to indicate blocks of code for function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced. All statements within a block must be indented the same amount. For example −
 
-Thus, in Elm all the continuous lines indented with same number of spaces would form a block. 
+```elm
+module If exposing (..)
+x = 0
+
+function1=
+ if x > 5 then
+    "x is greater"
+ else
+    "x is small"
+
+```
+
+However, the following block generates an error − 
+
+```elm
+-- File If.elm
+module If exposing (..)
+x = 0
+
+function1=
+ if x > 5 then
+    "x is greater"
+else
+    "x is small"
+
+```
+
+Thus, in Elm all the continuous lines indented with same number of spaces would form a block.
+
+```elm
+> import If exposing(..) -- importing module from file
+>function1  -- executing function from module
+-- SYNTAX PROBLEM ---------------------------------------------------
+
+I need whitespace, but got stuck on what looks like a new declaration. You are
+either missing some stuff in the declaration above or just need to add some
+spaces here:
+
+7| else
+   ^
+I am looking for one of the following things:
+
+    whitespace
+
+```
