@@ -13,15 +13,46 @@ In this chapter we will discuss the standard way to create applications in Elm p
 
 Model function deals with applications state.
 
+```elm
+-- Model syntax
+
+type alias Model = { ... }
+
+```
+
 ## View
 
  View is a visual representation of the application state. View function knows how to take data and make web page out of it.When user interacts with the view , the user can manipulate the state by generating messages.
+
+ ```elm
+
+ --View Syntax
+view : Model -> Html Message
+view model =
+
+ ```
 
 ## Message
 
 Message is a request from user to alter state . A message should go some place in order to actually to perform state change,that someplace is the update function.
 
+```elm
+--Message Syntax
+type Message = Reset | ...
+
+```
+
 ## Update
 
 The update function interprets  the messages to update model.
 
+```elm
+
+--Update Syntax
+update : Message -> Model -> Model
+update msg model =
+  case msg of
+    Reset -> ... -- if message is Reset do something
+
+
+```

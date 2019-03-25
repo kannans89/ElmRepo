@@ -4,5 +4,5 @@ x = 0
 function1=
  if x > 5 then
     "x is greater"
-else
+ else
     "x is small"
