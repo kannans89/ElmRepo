@@ -4,10 +4,15 @@
 
 In this chapter we will discuss the standard way to create applications in Elm platform.Elm uses an architectural pattern similar to Model-View-Controller pattern .
 
+Following are four main parts of Elm Architecture.
+
 1. Model
 2. View
 3. Message
 4. Update
+
+<!-- Add a new image make circle shaped and arrows in different style -->
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/11_architecture1.PNG?raw=true)
 
 ## Model
 
