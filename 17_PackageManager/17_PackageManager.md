@@ -57,6 +57,9 @@ step 3: Now we need togeneralte html from elm file
 
 `elm make .\VirtualDom.elm` . This will generate and Index.html file as shown below.Open in browser
 
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/15_elm_package.PNG?raw=true)
+
+
 ### Example installing an external package elm-svg
 
 step1 : Create a folder elmSvgApp
@@ -95,3 +98,4 @@ main =
 
 step 4: Now build the project using ` elm make .\SvgDemo.elm` .This will generate an index.html as shown below
 
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/16_elm_svg.PNG?raw=true)
