@@ -11,7 +11,7 @@ model = 0
 view model =
 -- invoke text function
  h1[]
-  [   div[] [text "Howdy2 Elm from TutorialsPoint" ]
+  [   div[] [text "CounterApp from TutorialsPoint" ]
       ,button[onClick Subtract] [text "-"]
       ,div[][text (toString  model)]   
       ,button[onClick Add] [text "+"]

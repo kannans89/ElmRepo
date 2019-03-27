@@ -44,7 +44,6 @@ Message is a request from user to alter state . A message should go some place i
 ```elm
 --Message Syntax
 type Message = Reset | ...
-
 ```
 
 ## Update
@@ -52,12 +51,9 @@ type Message = Reset | ...
 The update function interprets  the messages to update model.
 
 ```elm
-
 --Update Syntax
 update : Message -> Model -> Model
 update msg model =
   case msg of
     Reset -> ... -- if message is Reset do something
-
-
 ```
