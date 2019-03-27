@@ -130,10 +130,10 @@ Logical Operators are used to combine two or more conditions. Logical operators 
 
 |Sr No |  Operator | Description  | Example
 |:----:|:----------|:----|:-----------------|
-|1| && | |The operator returns true only if all the expressions specified return true| (10>5) && (20>5) returns True
-|2| || | The operator returns true if at least one of the expressions specified return true |(10 < 5) || (20 >5) returns True
-|3| not |The operator returns the inverse of the expression’s result. For E.g.: !(>5) returns false| not (10 < 5) returns True
-|4| xor |The operator returns true only if exactly one input returns true. The operator returns false if both the expressions return true| xor (10 > 5 ) (20 > 5) returns false  
+|1| `&&` |The operator returns true only if all the expressions specified return true| (10>5) && (20>5) returns True
+|2| \|\| |The operator returns true if at least one of the expressions specified return true|`(10 < 5) \|\| (20 >5) returns True`
+|3| `not` |The operator returns the inverse of the expression’s result. For E.g.: !(>5) returns false| not (10 < 5) returns True
+|4| `xor` |The operator returns true only if exactly one input returns true. The operator returns false if both the expressions return true| xor (10 > 5 ) (20 > 5) returns false  
 
 ### Illustration 
 
