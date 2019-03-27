@@ -182,4 +182,5 @@ Using a pipe operator `|>` we can chain multiple function calls and it is much c
 "f-e-d-c-b-a" : String
 
 ``` -->
+<!--
 In the first example we are chaining the list to join method.In the second case same list is piped to reverse function and after the piped to join. So list is displayed in reversed and joined. -->
