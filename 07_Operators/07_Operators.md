@@ -25,6 +25,7 @@ Assume the values in variables a and b are 7 and 2 respectively.
 |6|% (Modulus)|performs division operation and returns the remainder| a % b is 1
 
 ### Illustration
+Try the following example in REPL -  
 
 ```javascript
  > a = 7
@@ -63,7 +64,7 @@ Assume the value of `a` is 10 and `b` is 20.
 
 ### Illustration
 
-Open the elm repl and execute the following operations
+Open the elm repl and execute the following operations-
 
 ```javascript
 > a = 10
@@ -84,16 +85,94 @@ False : Bool
 True : Bool
 
 ```
+### Comparable Types
 
+Comparison operators like `>=` or `<` work with comparable types. These are defined as numbers, characters, strings, and lists, tuples. The comparable types on both sides of the operator must be the same.
+
+|Sr No |  Comparable type    | Example|
+|:----:|:----------|:-------|
+| 1    | number    | 7>2 gives True result
+| 2    | character    | 'a' =='b' gives False
+| 3    | string    | "hello" =="hello" gives True
+| 4   | tuple    | (1,"One")==(1,"One") gives True
+| 5   | list    | [1,2]==[1,2] gives True
+
+Open the elm repl and try examples shown below
+
+```javascript
+C:\Users\admin>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> 7>2
+True : Bool
+> 7.0>2
+True : Bool
+> 7.0<2.0
+False : Bool
+> 'a' > 'b'
+False : Bool
+> 'a' < 'b'
+True : Bool
+> "a" < "b"
+True : Bool
+> (1,2) > (2,3)
+False : Bool
+> ['1','3'] < ['2','1']
+True : Bool
+>
+
+```
+
+## Logical Operators  
+
+Logical Operators are used to combine two or more conditions. Logical operators too return a Boolean value. Assume the value of variable 
+
+|Sr No |  Operator | Description  | Example
+|:----:|:----------|:----|:-----------------|
+|1| && | |The operator returns true only if all the expressions specified return true| (10>5) && (20>5) returns True
+|2| || | The operator returns true if at least one of the expressions specified return true |(10 < 5) || (20 >5) returns True
+|3| not |The operator returns the inverse of the expression’s result. For E.g.: !(>5) returns false| not (10 < 5) returns True
+|4| xor |The operator returns true only if exactly one input returns true. The operator returns false if both the expressions return true| xor (10 > 5 ) (20 > 5) returns false  
+
+### Illustration 
+
+Open the elm repl and try examples shown below
+
+```javascript
+
+C:\Users\admin>elm repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+--------------------------------------------------------------------------------
+> 10 > 5 || 20>5
+True : Bool
+> 10 >5 && 20>5
+True : Bool
+> 10 /= 20
+True : Bool
+> not True
+False : Bool
+> not (10>20)
+True : Bool
+> xor True True
+False : Bool
+> xor (10>20) (20>10)
+True : Bool
+
+``` 
+
+
+
+
+
+<!-- move this to chapter function 
 ## Pipe Operator
-
-To understand pipe operator `|>`, let see an example where we have a list of different strings `["a","b","c"]` . Now we need a single string which is separated by `-`.Following example shows how to do that with `String.join`
-
+To understand pipe operator `|>`, let us see an example where we have a list of different strings `["a","b","c"]` . Now we need a single string which is separated by `-`.Following example shows how to do that with `String.join`
 ```elm
 > String.join "-" ["a","b","c","d","e","f"]
 "a-b-c-d-e-f" : String
 ```
-
 Using a pipe operator `|>` we can chain multiple function calls and it is much clean and readable.
 
 ```elm
@@ -102,6 +181,5 @@ Using a pipe operator `|>` we can chain multiple function calls and it is much c
 > ["a","b","c","d","e","f"] |> List.reverse |> String.join "-"
 "f-e-d-c-b-a" : String
 
-```
-
-In the first example we are chaining the list to join method.In the second case same list is piped to reverse function and after the piped to join. So list is displayed in reversed and joined.
+``` -->
+In the first example we are chaining the list to join method.In the second case same list is piped to reverse function and after the piped to join. So list is displayed in reversed and joined. -->
