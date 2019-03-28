@@ -4,16 +4,23 @@ Decision-making structures require that the programmer specifies one or more con
 
 Shown below is the general form of a typical decision-making structure found in most of the programming languages −
 
-![decision_making](https://user-images.githubusercontent.com/9062443/46945104-95641680-d091-11e8-81ca-8d4ab406442e.jpg)
+![decision_making](https://user-images.githubusercontent.com/9062443/46945104-95641680-d091-11e8-81ca-8d4ab406442e.jpg)  
+
+
+A decision-making construct evaluates a condition before the instructions are executed. Decision-making constructs in Elm are classified as follows −
 
 | S.No | Statement | Description |
 |:-----|:----------|:-------------|
-| 1 | *if...then...else* statement|  An *if* statement consists of a Boolean expression followed by *then* for true case and *else* for false case
+| 1 | *if...then...else* statement|  The *if* statement consists of a Boolean expression followed by *then* which is executed if the expression returns true and *else* which is executed if the expression returns false
 |2| nested *if* statement|You can use one *if...then...else*  inside another *if*. |
+|3| case statement|Tests the value of a variable against a list of values. |
 
-## If Statement
+## if...then...else Statement
 
-The *if…then* construct evaluates a condition before a block of code is executed.Unlike other  programming languages, in Elm we must provide the else branch. Otherwise Elm will throw an error
+The *if…then* construct evaluates a condition before a block of code is executed. 
+If the Boolean expression evaluates to true, then the block of code inside the then statement will be executed. If the Boolean expression evaluates to false, then the block of code inside the else statement will be executed.  
+
+Unlike other  programming languages, in Elm we must provide the else branch. Otherwise Elm will throw an error
 
 ### Syntax
 
@@ -21,7 +28,9 @@ The *if…then* construct evaluates a condition before a block of code is execut
  if boolean_expression then statement1_ifTrue else statement2_ifFalse
 ```
 
-If boolean expression evaluates to true , then first statement will get executed otherwise the second statement will be executed as shown in elm repl.
+### Illustration  
+
+Try the following example in the REPL terminal.
 
 ```elm
 > if 10>5 then "10 is bigger" else "10 is small"
@@ -40,6 +49,8 @@ The **else…if** ladder is useful to test multiple conditions. Its syntax is gi
 
 ### Illustration
 
+Try the following example in the Elm REPL-
+
 ```elm
  > score=80
 80 : number
@@ -50,8 +61,11 @@ The **else…if** ladder is useful to test multiple conditions. Its syntax is gi
 
 ## Case statement
 
-using case statement we can simplify the `if then else` as shown. Note the value return in each case has to be of the same type.
+The case statement can be used to simplify the `if then else` statement. The case statement checks if the value of a variable matches a predefined set of constants and executes the corresponding statement. Note the value returned by each case must be of the same type.
 
+### Illustration
+
+Try the following example in the Elm REPL 
 ```elm
 > n = 10
 10 : number
