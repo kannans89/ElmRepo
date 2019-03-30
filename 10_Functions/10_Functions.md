@@ -11,7 +11,7 @@ There are three  steps to using a function :
 The function declaration specifies the following: 
 - Name of the function 
 - Data type of the parameters.This is optional as a function may or may not have parameters.
-- Data type of the value, which the function will return. Functions in must always return a value as Elm is a functional programming language. Unlike functions in other programing languages, Elm functions do not use the *return* keyword to return a value.
+- Data type of the value, which the function will return. Functions in Elm must always return a value as Elm is a functional programming language. Unlike functions in other programing languages, Elm functions do not use the *return* keyword to return a value.
 
 2. **Function Definition or Function Implementation**: A function definition provides the actual body of the function.A function definition specifies how a specific task would be done. The syntax for defining a function is as given below:
 
