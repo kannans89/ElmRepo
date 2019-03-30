@@ -1,19 +1,59 @@
 # Tuples
 
-List and Tuples both are collections of data.A tuple can have fixed number of values and items in tuple can have different types unlike a list.Tuples are useful when you want to return multiple values from a function.Tuples are immutable like other types in elm.
+At times, there might be a need to store a collection of values of varied types. A list will not serve this purpose. Elm gives us a data structure called tuple that helps to achieve this purpose.
 
-## Tuple.first function
+It represents a heterogeneous collection of values. In other words, tuples enable storing multiple fields of different types.A tuple stores fixed number of values.Tuples are useful when you want to return multiple values of different types from a function.Tuples are immutable like other types in elm.
 
+## Tuple Operations
+Following are some common functions used with tuples in Elm: 
+
+### pair
+Create a 2-tuple.
+
+**Syntax**
+```elm
+Tuple.pair Value1,Value2
+```
+
+**Illustration**
+
+```elm
+
+
+```
+
+
+### first 
+Extract the first value from a tuple.
+
+**Syntax**
+```elm
+Tuple.first tuple_
+```
+
+**Illustration**
 ```javascript
- Tuple.first
-<function> : ( a1, a2 ) -> a1
+ 
+```
 
+### second 
+Extract the second value from a tuple.
+
+**Syntax**
+```elm
+Tuple.second tuple_
+```
+
+**Illustration**
+```javascript
+ 
 ```
 
 ## List of tuples
 
-If tuples are used inside a list , make sure they all have same types inside and number of parameters.
+A List can store Tuples.If tuples are used inside a list , make sure they all are of the same data type and have same number of parameters.
 
+**Illustration**
 ```javascript
 > [("hello",20),("world",30)]
 [("hello",20),("world",30)] : List ( String, number )
@@ -21,8 +61,10 @@ If tuples are used inside a list , make sure they all have same types inside and
 ```
 
 ## Tuple with function
+A function can return tuples. Also, tuples can be passed as parameters to functions.  
 
-In this example given a function is defined `fn_checkEven` this accepts an `Int` value as input parameter and returns a tuple `(Bool,String)`
+### Illustration
+The following example defines a function `fn_checkEven`. This function accepts an integer value as parameter and returns a tuple.
 
 ```javascript
 > fn_checkEven no = \
@@ -38,3 +80,10 @@ In this example given a function is defined `fn_checkEven` this accepts an `Int`
 >
 
 ```
+
+### Illustration [passing tuple as a parameter]
+The following example defines a function `fn_checkEven`. This function accepts an integer value as parameter and returns a tuple.
+
+```javascript
+
+``
