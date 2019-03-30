@@ -1,8 +1,8 @@
 # Tuples
 
-At times, there might be a need to store a collection of values of varied types. A list will not serve this purpose. Elm gives us a data structure called tuple that helps to achieve this purpose.
+At times, there might be a need to store a collection of values of varied types. Elm gives us a data structure called tuple that serves this purpose. 
 
-It represents a heterogeneous collection of values. In other words, tuples enable storing multiple fields of different types.A tuple stores fixed number of values.Tuples are useful when you want to return multiple values of different types from a function.Tuples are immutable like other types in elm.
+A tuple represents a heterogeneous collection of values. In other words, tuples enable storing multiple fields of different types.A tuple stores fixed number of values.Tuples are useful when you want to return multiple values of different types from a function.Tuples are immutable like other types in elm.
 
 ## Tuple Operations
 Following are some common functions used with tuples in Elm: 
