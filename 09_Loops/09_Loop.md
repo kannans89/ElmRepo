@@ -44,6 +44,9 @@ Open the elm-repl from current project folder (location of Loop.elm file).
 
 ```
 
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/22_recursion_1.PNG?raw=true)
+
+
 ### Illustration
 The following example prints the sum of n numbers using recursion.
 
