@@ -1,5 +1,6 @@
 # PackageManager
 
+A package manager or package-management system automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner
 Just like javascript have a package manager called `npm` , elm package manager is `elm-package`.This does three tasks
 
 1. Install all dependencies that an elm application needs
