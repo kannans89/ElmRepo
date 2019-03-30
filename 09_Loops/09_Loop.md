@@ -9,7 +9,8 @@ This chapter discusses the concept of recursion.
 
 Some computer programming languages allow a module or function to call itself. This technique is known as recursion.
 
-### Illustration 
+### Illustration-1
+
 In this program we will se how to use recursion to display hello five times.
 
 ### Step 1: Create a file Loop.elm
@@ -21,7 +22,7 @@ module Loop exposing(..)
 //function signature
 sayHello:Int ->String
 //function implementation
-sayHello n =    
+sayHello n =
   case n of
    1 ->   "Hello:1 "
    _ -> "Hello:" ++ toString (n) ++ " " ++  sayHello(n-1)
@@ -44,21 +45,32 @@ Open the elm-repl from current project folder (location of Loop.elm file).
 
 ```
 
-!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/22_recursion_1.PNG?raw=true)
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/22_recursion_1.jpg?raw=true)
 
+### Illustration- 2
 
-### Illustration
 The following example prints the sum of n numbers using recursion.
 
 ```javascript
-> sumOfNos n =\
+>  sumOfNos n =\
 |  if n==0 then 0 \
-|  else (n) + sumOfNos (n-1)
+|   else (n) + sumOfNos (n-1)
 <function> : number -> number1
 
 ```
 
-```javascript
+In the elm repl we crated a function `sumOfNos n` which takes an input number and sums all numbers from 0 to that number.
+
+For example if we pass input as 5 , it will sum up `1+2+3+4+5` which is `15`.
+
+```elm
+> sumOfNos 5
+15 : number
+```
+
+The output of program is as shown above.
+
+<!-- ```javascript
 
  > sums n = \
 |   case n of \
@@ -68,6 +80,6 @@ The following example prints the sum of n numbers using recursion.
 > sums 5
 55 : number
 
-```
+``` -->
 
-<explain this illustratin>>>
+<!-- <explain this illustratin>>> -->

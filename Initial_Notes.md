@@ -113,3 +113,9 @@ elm-package install elm-lang/http
 elm-package install elm-lang/websocket
 
 ```
+
+//loop
+packagemanager
+string
+function to have pipeoperator
+string --> string function , repel and also with variable

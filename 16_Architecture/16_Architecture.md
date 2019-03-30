@@ -12,7 +12,7 @@ Following are four main parts of Elm Architecture.
 4. Update
 
 <!-- Add a new image make circle shaped and arrows in different style -->
-!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/11_architecture1.PNG?raw=true)
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/11_architecture1.JPG?raw=true)
 
 ## Model
 
