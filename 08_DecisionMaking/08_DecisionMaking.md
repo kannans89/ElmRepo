@@ -40,7 +40,7 @@ Try the following example in the REPL terminal.
 
 ## Nested If
 
-The **else…if** ladder is useful to test multiple conditions. Its syntax is given below
+The nested if statement is useful for testing multiple conditions. The syntax of a nested if statement is given below:
 
 ```elm
  if boolean_expression1 then statement1_ifTrue else if boolean_expression2 then statement2_ifTrue else statement3_ifFalse
@@ -61,10 +61,20 @@ Try the following example in the Elm REPL-
 
 ## Case statement
 
-The case statement can be used to simplify the `if then else` statement. The case statement checks if the value of a variable matches a predefined set of constants and executes the corresponding statement. Note the value returned by each case must be of the same type.
+The case statement can be used to simplify the `if then else` statement. 
+
+The syntax of a case statement is as given below:  
+
+```elm
+case variable_name of 
+  constant1 -> Return_some_value
+  constant2 -> Return_some_value
+   _ -> Return_some_value if none of the above values match
+```
+The case statement checks if the value of a variable matches a predefined set of constants and returns the corresponding value. Note that value returned by each case must be of the same type. 
+If the variables value does not match any of the given constants, the control is passed to * default * (denoted by //_ ) and the corresponding value is returned. 
 
 ### Illustration
-
 Try the following example in the Elm REPL 
 ```elm
 > n = 10
@@ -75,3 +85,4 @@ Try the following example in the Elm REPL
 "n is not Zero" : String
 
 ```
+The above code snippet checks if the value of *n* is zero. The control is passed to *default*, which returns the string " n is not Zero".

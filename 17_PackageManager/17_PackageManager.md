@@ -1,18 +1,20 @@
 # PackageManager
 
-A package manager or package-management system automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner
-Just like javascript have a package manager called `npm` , elm package manager is `elm-package`.This does three tasks
+A package manager is a command-line tool that automates the process of installing, upgrading, configuring, and removing packages in your application. Just like Javascript has a package manager called `npm` , elm has a package manager called `elm-package`.  
+
+The package manager performs the following three tasks: 
 
 1. Install all dependencies that an elm application needs
+2. Publish custom packages
+3. Determine the version of your package when you are ready to publish and update.  
 
-2. If we create package ourselves and we want to publish for other people to use.
-3. Helps to determine the version of your package when you are ready to publish and update.Elm takes advantage of the fact it is strongly typed functional language in order to provide lot of static analysis of your application and of your packages.It is gonna use this to analyze your API from the previous version of the package to a new one in order to determin what the proper semantic version of new package is.
+<!--
+Elm takes advantage of the fact it is strongly typed functional language in order to provide lot of static analysis of your application and of your packages.It is gonna use this to analyze your API from the previous version of the package to a new one in order to determin what the proper semantic version of new package is.-->
 
+<< Add details of Elm pm commands here >>> 
+## Illustration
 
-## Example
-
-
-Step1: create a folder and Make file VirtualDom.elm
+Step1: Create a folder and Make file VirtualDom.elm
 
 ```elm
 import Html exposing (..)

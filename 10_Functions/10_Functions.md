@@ -1,30 +1,48 @@
 # Functions
 
-Functions are the building blocks of readable, maintainable, and reusable code. A function is a set of statements to perform a specific task. Functions organize the program into logical blocks of code. Once defined, functions may be called to access code. This makes the code reusable. Moreover, functions make it easy to read and maintain the program’s code.
+Functions are the building blocks of an Elm program. A function is a set of statements to perform a specific task.  
+Functions organize the program into logical blocks of code. Once defined, functions may be called to access code. This makes the code reusable. Moreover, functions make it easy to read and maintain the program’s code.  
 
-A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+There are three  steps to using a function : 
+1. **Function Declaration**: A function declaration tells the compiler about a function's name, return type, and parameters. The syntax for declaring a function is given below: 
+```elm
+   fn_name:data_type_of_the_parameters ->return_type
+```
+The function declaration specifies the following: 
+- Name of the function 
+- Data type of the parameters.This is optional as a function may or may not have parameters.
+- Data type of the value, which the function will return. Functions in Elm must always return a value as Elm is a functional programming language. Unlike functions in other programing languages, Elm functions do not use the *return* keyword to return a value.
 
-|S.No| Name | Description
-|:----|:-----|:----------
-| 1   | Defining a function | A function definition specifies what and how a specific task would be done
-| 2   | Calling or invoking a Function | A function must be called so as to execute it
-| 3   | Returning Functions | Functions may also return value along with control, back to the caller
-| 4   | Parameterized Function | Parameters are a mechanism to pass values to functions.
+2. **Function Definition or Function Implementation**: A function definition provides the actual body of the function.A function definition specifies how a specific task would be done. The syntax for defining a function is as given below:
 
-## Syntax
-
-```rust
+```elm
    fn_name parameter1 parameter2 =
      statements
 ```
 
-<!-- https://dennisreimann.de/articles/elm-functions.html -->
+3. **Invoking or Calling a Function**:  A function must be called so as to execute it. The syntax for calling a function is given below:
 
-### Examples
+```elm
+   fn_name parameter1 parameter2 
+```
 
-Let us see an example where we define a function to add two numbers as shown
+### Illustration
 
-```javascript
+The following code defines a function *greet*. The function returns a string "Hello World". 
+```elm
+
+   //code goes here 
+   
+```
+   
+## Parameterized Functions
+Parameters are a mechanism to pass values to a function. The values of the parameters are passed to the function at the time of function invocation.  
+
+### Illustration
+The following example defines a function *fn_add*. The function accepts two numbers as parameters and returns their sum. Try the following in elm REPL
+
+```elm
+
 > fn_add x y = x+y
 <function> : number -> number -> number
 > fn_add 10 20
@@ -32,7 +50,8 @@ Let us see an example where we define a function to add two numbers as shown
 
 ```
 
-Let us see another example where we passing `String` type as shown below.
+### Illustration
+The following example defines a function sayHello. The sayHello function accepts and returns a String value as parameter and returns a String. 
 
 ```javascript
 > sayHello name = "Hello "++ name
@@ -42,3 +61,4 @@ Let us see another example where we passing `String` type as shown below.
 >
 
 ```
+<!-- https://dennisreimann.de/articles/elm-functions.html -->
