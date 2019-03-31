@@ -475,6 +475,7 @@ The signature shows map takes two input parameters and returns a String.The firs
 > (\c -> if c == 'o' then '@' else c)
 <function> : Char -> Char
 ```
+
 **Illustration**
 
 ```elm
