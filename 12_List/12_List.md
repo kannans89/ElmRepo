@@ -1,6 +1,20 @@
 # List
 
-List contains a collection of items all have the same type.
+The use of variables to store values poses the following limitations:
+- Variables are scalar in nature. In other words, a variable declaration can only contain a single at a time. This means that to store n values in a program n variable declarations will be needed. Hence, the use of variables is not feasible when one needs to store a larger collection of values.
+- Variables in a program are allocated memory in random order, thereby making it difficult to retrieve/read the values in the order of their declaration.  
+
+The List, Tuples and Record data structures can be used to store a collection of values.This chapter discusses how to use List in Elm.
+
+A List is a collection of homogeneous values. The values in a list must all be of the same data type.  
+
+### Syntax
+```javascript
+List_name = [value1,value2,value3.....valuen]
+```
+
+### Illustration 
+The following example shows how to use a List in Elm. Try this example in 
 
 ```javascript
 
@@ -10,7 +24,7 @@ List contains a collection of items all have the same type.
 ["hello","world"] : List String
 ```
 
-If we try different types into a list you will end up with following type mismatch error
+If we try adding values of different types into a list the compiler will throw a type mismatch error. This is shown below.
 
 ```javascript
 > myList = [1,"hello"]
@@ -29,7 +43,19 @@ But the 2nd is:
     String
 ```
 
-## List isEmpty function
+## List operations
+Some common operations on a List are given below : 
+
+### isEmpty
+This function returns true if a list is empty
+
+**Syntax**
+
+```javascript
+List.isEmpty list_name
+```
+
+**Illustration**
 
 ```javascript
 > List.isEmpty
@@ -39,23 +65,157 @@ But the 2nd is:
 False : Bool
 ```
 
-## How to reverse a list
+### reverse
+This function reverses the list.
+
+**Syntax**
+```javascript
+List.reverse list_name
+```
+
+**Illustration**
 
 ```javascript
 > List.reverse [10,20,30]
 [30,20,10] : List number
 ```
 
-## How to concatenate two lists
+### length
+This function returns the length of a list.
 
-In the example we are combining two lists of floats using the `++` operator.
+**Syntax**
+```javascript
+List.length list_name
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+
+### maximum
+This function returns the maximum element in a non-empty list.
+
+**Syntax**
+```javascript
+List.maximum list_name
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+
+### minimum
+This function returns the minimum element in a non-empty list.
+
+**Syntax**
+```javascript
+List.minimum list_name
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+
+### sum
+This function returns the sum of all elements in a list.
+
+**Syntax**
+```javascript
+List.sum list_name
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+
+### product
+This function returns the product of all elements in a list.
+
+**Syntax**
+```javascript
+List.product list_name
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+
+### sort
+This function sorts values from lowest to highest in a list.
+
+**Syntax**
+```javascript
+List.sort list_name
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+### concat
+This function concatenates a bunch of lists into a single list.
+
+**Syntax**
+```javascript
+List.concat [ [list_name1]],[list_name2]],[list_name3]],.....[list_nameN]] ]
+```
+
+**Illustration**
+
+```javascript
+
+
+```  
+### append
+This function puts two lists together.
+
+**Syntax**
+
+```javascript
+List.concat [ [list_name1]],[list_name2]],[list_name3]],.....[list_nameN]] ]
+```
+
+**Illustration**
+
+```javascript
+
+
+```
+
+The `++` operator can also be used to append a list to another. This is shown in the example below: 
 
 ```javascript
 > [10.1,20.2] ++ [30.3,40.4]
 [10.1,20.2,30.3,40.4] : List Float
 ```
 
-## range method of list
+### range
+This function creates a list of numbers, every element increasing by one. The lowest and highest number that should be in the list is passed to the function.
+
+**Syntax**
+
+```javascript
+List.range start_range end_range
+```
+
+**Illustration**
 
 ```javascript
 > List.range 1 10
@@ -64,6 +224,9 @@ In the example we are combining two lists of floats using the `++` operator.
 ```
 
 ## using the cons operator
+The cons operator ( :: ) adds an element to the front of a list. 
+
+**Illustration**
 
 ```javascript
 > 10::[20,30,40,50]
@@ -71,7 +234,7 @@ In the example we are combining two lists of floats using the `++` operator.
 
 ```
 
-cons operator with type mismatch
+The new element to be added and the data-type of the values in the list must match. The compiler throws an error if the data types do not match. 
 
 ```javascript
 > [1,2,3,4]::[5,6,7,8]
@@ -97,7 +260,7 @@ how the left and right arguments interact.
 
 ## Lists are immutable
 
-Let us check if lists are immutable in Elm.The first list `myList` when concatenated with value 1 ,it creates a new list and is returned to `myListCopy`.So if we display initial list ,its values will not be changed as in the exmaple.
+Let us check if lists are immutable in Elm.The first list `myList` when concatenated with value 1 , creates a new list and is returned to `myListCopy`.So if we display initial list ,its values will not be changed.
 
 ```javascript
 > myList = [10,20,30]
@@ -110,3 +273,4 @@ Let us check if lists are immutable in Elm.The first list `myList` when concaten
 False : Bool
 
 ```
+
