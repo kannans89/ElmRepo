@@ -23,22 +23,31 @@ The function declaration specifies the following:
 3. **Invoking or Calling a Function**:  A function must be called so as to execute it. The syntax for calling a function is given below:
 
 ```elm
-   fn_name parameter1 parameter2 
+   fn_name parameter1 parameter2
 ```
 
 ### Illustration
 
-The following code defines a function *greet*. The function returns a string "Hello World". 
+The following code defines a function *greet*. The function returns a string "Hello ".
 ```elm
 
-   //code goes here 
-   
+> greet = \
+|  if True then \
+|    "Hello" \
+|   else \
+|     "GoodBye"
+"Hello" : String
+> greet
+"Hello" : String
+  
 ```
-   
+
 ## Parameterized Functions
+
 Parameters are a mechanism to pass values to a function. The values of the parameters are passed to the function at the time of function invocation.  
 
 ### Illustration
+
 The following example defines a function *fn_add*. The function accepts two numbers as parameters and returns their sum. Try the following in elm REPL
 
 ```elm
@@ -61,4 +70,22 @@ The following example defines a function sayHello. The sayHello function accepts
 >
 
 ```
-<!-- https://dennisreimann.de/articles/elm-functions.html -->
+
+## Pipe Operator
+
+To understand pipe operator `|>`, let us see an example where we have a list of different strings `["a","b","c"]` . Now we need a single string which is separated by `-`.Following example shows how to do that with `String.join`
+```elm
+> String.join "-" ["a","b","c","d","e","f"]
+"a-b-c-d-e-f" : String
+```
+Using a pipe operator `|>` we can chain multiple function calls and it is much clean and readable.
+
+```elm
+> ["a","b","c","d","e","f"] |> String.join "-"
+"a-b-c-d-e-f" : String
+> ["a","b","c","d","e","f"] |> List.reverse |> String.join "-"
+"f-e-d-c-b-a" : String
+
+```
+
+In the first example we are chaining the list to join method.In the second case same list is piped to reverse function and after the piped to join. So list is displayed in reversed and joined.

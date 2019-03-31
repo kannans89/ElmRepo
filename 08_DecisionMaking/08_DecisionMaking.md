@@ -17,7 +17,7 @@ A decision-making construct evaluates a condition before the instructions are ex
 
 ## if...then...else Statement
 
-The *if…then* construct evaluates a condition before a block of code is executed. 
+The *if…then* construct evaluates a condition before a block of code is executed.
 If the Boolean expression evaluates to true, then the block of code inside the then statement will be executed. If the Boolean expression evaluates to false, then the block of code inside the else statement will be executed.  
 
 Unlike other  programming languages, in Elm we must provide the else branch. Otherwise Elm will throw an error
@@ -61,8 +61,7 @@ Try the following example in the Elm REPL-
 
 ## Case statement
 
-The case statement can be used to simplify the `if then else` statement. 
-
+The case statement can be used to simplify the `if then else` statement.
 The syntax of a case statement is as given below:  
 
 ```elm
@@ -71,11 +70,14 @@ case variable_name of
   constant2 -> Return_some_value
    _ -> Return_some_value if none of the above values match
 ```
+
 The case statement checks if the value of a variable matches a predefined set of constants and returns the corresponding value. Note that value returned by each case must be of the same type. 
-If the variables value does not match any of the given constants, the control is passed to * default * (denoted by //_ ) and the corresponding value is returned. 
+If the variables value does not match any of the given constants, the control is passed to * default * (denoted by //_ ) and the corresponding value is returned.
 
 ### Illustration
-Try the following example in the Elm REPL 
+
+Try the following example in the Elm REPL
+
 ```elm
 > n = 10
 10 : number
@@ -85,4 +87,5 @@ Try the following example in the Elm REPL
 "n is not Zero" : String
 
 ```
+
 The above code snippet checks if the value of *n* is zero. The control is passed to *default*, which returns the string " n is not Zero".
