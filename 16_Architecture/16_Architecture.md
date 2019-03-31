@@ -4,7 +4,7 @@
 
 In this chapter we will discuss the standard way to create applications in Elm platform.Elm uses an architectural pattern similar to Model-View-Controller pattern .
 
-Following are four main parts of Elm Architecture.
+Following are the four main parts of Elm Architecture.
 
 1. Model
 2. View
@@ -16,7 +16,7 @@ Following are four main parts of Elm Architecture.
 
 ## Model
 
-Model function deals with applications state.
+Model deals with the application's state.
 
 ```elm
 -- Model syntax
@@ -27,7 +27,7 @@ type alias Model = { ... }
 
 ## View
 
- View is a visual representation of the application state. View function knows how to take data and make web page out of it.When user interacts with the view , the user can manipulate the state by generating messages.
+View is a visual representation of the application state. The View knows how to take data and generate web page out of it.When a user interacts with the view , the user can manipulate the state by generating messages.
 
  ```elm
 
@@ -39,7 +39,7 @@ view model =
 
 ## Message
 
-Message is a request from user to alter state . A message should go some place in order to actually to perform state change,that someplace is the update function.
+Message is a request from the user to alter the application state . 
 
 ```elm
 --Message Syntax
