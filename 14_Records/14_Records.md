@@ -1,39 +1,46 @@
 # Records
 
-Record is a way of creating key value pair, it is similar to an object  in javascript.
+At times, there might be a need to represent data as key-value pairs. The record data structure in Elm can be used to achieve this. A record can be used to organize related data to enable easy access and updation of data. Elm records are similar to objects  in Javascript. Data elements in a record are known as fields.  
 
-## Example
+## Defining a record 
+Use the following syntax to define a record- 
+
+### Syntax
+```elm
+record_name= {fieldname1=value1, fieldname2=value2....fieldnameN=valueN}
+```
+
+A record can store data of multiple types. The field names in a record must conform to the general rules for naming an Elm identifier.
+
+## Accessing record values 
+Use the following syntax to access individual fields in a record.
+### Syntax
+```elm
+record_name.fieldname
+```
+OR
+
+```elm
+.fieldname record_name
+```
+
+### Illustration
+Try the following in the Elm REPL- 
 
 ```javascript
 > company = {name="TutorialsPoint",rating=4.5}
 { name = "TutorialsPoint", rating = 4.5 } : { name : String, rating : Float }
-
-```
-
-Accessing values from a record is shown below
-
-```javascript
 > company.name
 "TutorialsPoint" : String
-> company.rating
+> .rating company
 4.5 : Float
 >
 ```
 
-Another way to access key value is as shown .
+## Using Record with List
+A record can be stored inside a list. However, all field values of a record should be of the same type. This is shown in the example below: 
 
-```javascript
-> .rating company
-4.5 : Float
-> .name company
-"TutorialsPoint" : String
-
-```
-
-In the example the key `.rating` is searched in record `company`.
-
-## Record with list
-
+### Illustration
 ```javascript
 > [{name="Mohtashim"},{name="kannan"}]
 [{ name = "Mohtashim" },{ name = "kannan" }] : List { name : String }
@@ -46,8 +53,7 @@ In the example the key `.rating` is searched in record `company`.
 ```
 
 ## Update a record
-
-Since records are immutable , when we update a record , we will get  a new record with updated values.
+Records are immutable in Elm. When a record is updated, a new record with updated values is returned.
 
 ```javascript
 > record1={name="FirstRecord"}
