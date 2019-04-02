@@ -38,9 +38,19 @@ Try the following in the Elm REPL-
 ```
 
 ## Using Record with List
-A record can be stored inside a list. However, all field values of a record should be of the same type. This is shown in the example below: 
+A record can be stored inside a list. All field values of the record should be of the same type. 
+### Syntax  ---check this ----
+```elm
+list_name =[ {field_name1=value1},{field_name1=value2}]
 
+OR
+
+list_name=[record_name1, record_name2, record_name3....record_nameN]
+
+```
 ### Illustration
+Try the following in Elm REPL- 
+
 ```javascript
 > [{name="Mohtashim"},{name="kannan"}]
 [{ name = "Mohtashim" },{ name = "kannan" }] : List { name : String }
@@ -52,8 +62,16 @@ A record can be stored inside a list. However, all field values of a record shou
 [{ name = "FirstRecord" },{ name = "SecondRecord" }] : List { name : String }
 ```
 
+
 ## Update a record
-Records are immutable in Elm. When a record is updated, a new record with updated values is returned.
+Records are immutable in Elm. When a record is updated, a new record with updated values is returned. The field can hold value of a different type when updating a record. 
+
+### Syntax
+```elm
+{record_name | field_name1= new_value1, field_name2= new_value2,field_name3= new_value3....field_nameN= new_valueN}
+```
+### Illustration
+Try the following in Elm REPL- 
 
 ```javascript
 > record1={name="FirstRecord"}
@@ -66,7 +84,8 @@ Records are immutable in Elm. When a record is updated, a new record with update
 False : Bool
 ```
 
-below example we are updating multiple fields of a record
+### Illustration
+The following example updates multiple fields of a record.Try the following in Elm REPL- 
 
 ```javascript
 
@@ -80,9 +99,9 @@ below example we are updating multiple fields of a record
 
 ```
 
-### Types alias
+## Types alias
 
-Type alias is defining a schema for a record. This means what are the attributes allowed in a record. So programmer will not make mistake of missing any specific attribute while assigning values for example if developer2 have only name by mistake if location is not assigned ,compiler will not give error.
+Type alias defines a schema for a record. In other words, a type alias defines which fields can the record store and the type of value these fields can store. So programmer will not make mistake of missing any specific attribute while assigning values for example if developer2 have only name by mistake if location is not assigned ,compiler will not give error.
 
 ```javascript
 > developer1 = {name="bhagavati",location="hyderabad"}
@@ -92,8 +111,13 @@ Type alias is defining a schema for a record. This means what are the attributes
 { name = "kannan" } : { name : String }
 
 ```
+### Syntax
+```elm
+type alias alias_name={field_name1:data_type,field_name2:data_type,....field_nameN:data_type}
 
-So  let us see how to use type alias
+```
+### Illustration
+Try the following in Elm REPL- 
 
 ```javascript
 > type alias Developer = { name:String,location:String,age:Int}
@@ -104,7 +128,7 @@ So  let us see how to use type alias
 
 ```
 
-Now if you forget to type location and age , the staement returns a function as shown
+Now if you forget to type location and age , the statement returns a function which has input parameters for location and age fields. 
 
 ```javascript
 > dev3 = Developer "Bhagavati"
@@ -112,7 +136,7 @@ Now if you forget to type location and age , the staement returns a function as 
 
 ```
 
-since it returns a function which have two remaining parameters String for location and Int for age. Now we can invoke function as shown passing in location `Pune` and age `25`
+We we can invoke the function as shown below and pass to it the values for location and age fields.
 
 ```javascript
  > dev3 "Pune" 25
