@@ -19,6 +19,27 @@ A sequence of unicode characters is called a String. In Elm strings are enclosed
 
 Some common functions that can be used to query or manipulate string values are given below. Use REPL to try the examples given below. 
 
+|Sr No |  method    | description|
+|:----:|:----------|:-------|
+| 1    |isEmpty : String -> Bool     | checks string is empty
+| 2    |reverse  : String -> String  |   reverses a input string    |
+| 3    |length  : String -> Int  |   returns an integer length    |
+| 4   |append  :String -> String -> String  |  appends two string and returns a new string    |
+| 5   |concat  : List String -> String  |  appends a list of strings and returns a new string    |
+| 6  |split : String -> String -> List String |  splits an input string using a given separator,returns a string list   |
+| 7  |slice : Int -> Int -> String -> String |  returns a substring given a start , end index and input string|
+| 8  |contains : String -> String -> Bool |  returns true if second string contains the first one
+| 9  |toInt : String -> Result.Result String Int |  parses a String to Integer
+| 10  |toInt : String -> Result.Result String Int |  parses a String to Integer
+| 11  |toFloat : String -> Result.Result String Float |  parses a String to float
+| 12  |fromChar : Char -> String |  creates a string from a given character.
+| 13 |toList : String -> List Char | converts string to list of characters
+| 14 |fromList  : List Char -> String |converts a list of characters into a String
+| 15 |toUpper : String -> String |converts input string to upper case
+| 16 |trim : String -> String |gets rid of whitespace on both sides of a string.
+| 17 |filter : (Char -> Bool) -> String -> String| filters set of characters from input string
+| 18 |map : (Char -> Char) -> String -> String| transforms every character in an input string
+
 ### isEmpty
 
 This function can be used to determine if a string is empty. This function returns True if the supplied String is empty. 
