@@ -29,7 +29,7 @@ sayHello n =
 
 ```
 
-The function sayHello checks if parameter passed is 1 , if 1 then function will return , otherwise it will create a string Hello and calls the same function.(need to put diagram here to explain concept)
+The function sayHello checks if parameter passed is 1 , if 1 then function will return , otherwise it will create a string Hello and calls the same function.
 
 ### Step 2: Invoke sayHello from REPL
 
