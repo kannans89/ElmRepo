@@ -24,7 +24,7 @@ itself for example making Http or Ajax requests or making
 api calls etc.The way it should be done is through commands.
 A command is triggered by a message.We will see an exmaple
 
-!["Commands"](https://github.com/kannans89/ElmRepo/blob/master/images/18_commands.PNG?raw=true)
+!["Commands"](https://github.com/kannans89/ElmRepo/blob/master/images/command.JPG?raw=true)
 
 ## Http Module
 

@@ -8,7 +8,7 @@ For example when we use websockets the application send data to server
 via commands.Websocket can receive data back from the server since its
 two way communication.We dont have to request for webscoket communication,the server can push data to socket.this is different from http request. Using suscriptions only elm applicaiton can listeren incoming requests form server back to client. Unlike http does client to server.websocket does server to client and client to server.
 
-!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/20_subscription.PNG?raw=true)
+!["Architecture"](https://github.com/kannans89/ElmRepo/blob/master/images/subscription.JPG?raw=true)
 
 syntax 
 
