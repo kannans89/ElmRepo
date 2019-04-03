@@ -122,7 +122,7 @@ For tuples with three or more values we need to use destructuring.Here we assign
 
 ### Example2
 
-In this example we wil use `let..in` to destructure.
+In this example we wil use `let..in` block syntax to destructure.
 
 
 ```elm

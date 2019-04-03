@@ -51,8 +51,15 @@ This function returns true if a list is empty
 
 **Syntax**
 
-```javascript
+```elm
 List.isEmpty list_name
+```
+
+function signature is shown below
+
+```elm
+> List.isEmpty
+<function> : List a -> Bool
 ```
 
 **Illustration**
@@ -73,6 +80,13 @@ This function reverses the list.
 List.reverse list_name
 ```
 
+function signature is shown below
+
+```elm
+> List.reverse
+<function> : List a -> List a
+```
+
 **Illustration**
 
 ```javascript
@@ -81,6 +95,7 @@ List.reverse list_name
 ```
 
 ### length
+
 This function returns the length of a list.
 
 **Syntax**
@@ -88,29 +103,44 @@ This function returns the length of a list.
 List.length list_name
 ```
 
+```elm
+>List.length
+<function> : List a -> Int
+```
+
 **Illustration**
 
 ```javascript
-
+> List.length [10,20,30]
+3 : Int
 
 ```
 
 ### maximum
+
 This function returns the maximum element in a non-empty list.
 
 **Syntax**
 ```javascript
 List.maximum list_name
 ```
-
+type the following in elm repl
+```elm
+> List.maximum
+<function> : List comparable -> Maybe.Maybe comparable
+```
 **Illustration**
 
 ```javascript
 
-
+> List.maximum [10,20,30]
+Just 30 : Maybe.Maybe number
+> List.maximum []
+Nothing : Maybe.Maybe comparable
 ```
 
 ### minimum
+
 This function returns the minimum element in a non-empty list.
 
 **Syntax**
@@ -118,14 +148,21 @@ This function returns the minimum element in a non-empty list.
 List.minimum list_name
 ```
 
+```elm
+> List.minimum
+<function> : List comparable -> Maybe.Maybe comparable
+```
+
 **Illustration**
 
 ```javascript
-
+> List.minimum [10,20,30]
+Just 10 : Maybe.Maybe number
 
 ```
 
 ### sum
+
 This function returns the sum of all elements in a list.
 
 **Syntax**
@@ -133,14 +170,21 @@ This function returns the sum of all elements in a list.
 List.sum list_name
 ```
 
+```elm
+> List.sum
+<function> : List number -> number
+```
+
 **Illustration**
 
 ```javascript
-
+> List.sum [10,20,30]
+60 : number
 
 ```
 
 ### product
+
 This function returns the product of all elements in a list.
 
 **Syntax**
@@ -148,54 +192,82 @@ This function returns the product of all elements in a list.
 List.product list_name
 ```
 
+```elm
+<function> : List number -> number
+```
+
 **Illustration**
 
 ```javascript
-
+ List.product [10,20,30]
+6000 : number
 
 ```
 
 ### sort
+
 This function sorts values from lowest to highest in a list.
 
 **Syntax**
+
 ```javascript
 List.sort list_name
 ```
 
+```elm
+> List.sort
+<function> : List comparable -> List comparable
+```
+
 **Illustration**
 
 ```javascript
-
-
+> List.sort [10,20,30]
+[10,20,30] : List number
 ```
+
 ### concat
+
 This function concatenates a bunch of lists into a single list.
 
 **Syntax**
+
 ```javascript
-List.concat [ [list_name1]],[list_name2]],[list_name3]],.....[list_nameN]] ]
+List.concat [ [list_name1],[list_name2],[list_name3],.....[list_nameN] ]
+```
+
+```elm
+> List.concat
+<function> : List (List a) -> List a
 ```
 
 **Illustration**
 
 ```javascript
-
+> List.concat [[10,20], [30,40],[50,60]]
+[10,20,30,40,50,60] : List number
 
 ```  
+
 ### append
 This function puts two lists together.
 
 **Syntax**
 
 ```javascript
-List.concat [ [list_name1]],[list_name2]],[list_name3]],.....[list_nameN]] ]
+List.append  [list_name1] [list_name2]
+```
+
+```elm
+ >List.append
+<function> : List a -> List a -> List a
 ```
 
 **Illustration**
 
 ```javascript
-
+> List.append  [10,20] [30,40]
+[10,20,30,40] : List number
 
 ```
 
@@ -215,6 +287,11 @@ This function creates a list of numbers, every element increasing by one. The lo
 List.range start_range end_range
 ```
 
+```elm
+> List.range
+<function> : Int -> Int -> List Int
+```
+
 **Illustration**
 
 ```javascript
@@ -224,6 +301,7 @@ List.range start_range end_range
 ```
 
 ## using the cons operator
+
 The cons operator ( :: ) adds an element to the front of a list. 
 
 **Illustration**
@@ -274,3 +352,4 @@ False : Bool
 
 ```
 
+## How to access elements in a list??
