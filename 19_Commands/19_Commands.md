@@ -66,7 +66,7 @@ type Msg
   | NewFactArrived (Result Http.Error String)
 
 ```
-## Defin update method
+## Define update method
 
 Note the update method returns a tuple which have model and command object.When user click on button the command passed is ShowFacts,
 if showFacts then update method returns `(model, getRadmonNumberFromAPI model.input)`

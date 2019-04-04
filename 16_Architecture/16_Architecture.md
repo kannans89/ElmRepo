@@ -63,8 +63,8 @@ Message is a request from the user to alter the application state . Messages are
 type Message =  Add |Reset ...
 ```
 
-The syntax shows a type Message which is a category of commands like Add,Reset . The elm application
-will edit the state based on commands passed to it.If message is Add ,application could add a new a value to the model and if reset it may delete all values from the model.These decisions are made in update method.
+The syntax shows a type Message which is a category of actions like Add,Reset . The elm application
+will edit the state based on messages passed to it.If message is Add ,application could add a new a value to the model and if reset it may delete all values from the model.These decisions are made in update method.
 
 ## Update
 

@@ -38,8 +38,9 @@ Try the following in the Elm REPL-
 ```
 
 ## Using Record with List
-A record can be stored inside a list. All field values of the record should be of the same type. 
-### Syntax  ---check this ----
+A record can be stored inside a list. All field values of the record should be of the same type.
+
+### Syntax  
 ```elm
 list_name =[ {field_name1=value1},{field_name1=value2}]
 
@@ -64,6 +65,7 @@ Try the following in Elm REPL-
 
 
 ## Update a record
+
 Records are immutable in Elm. When a record is updated, a new record with updated values is returned. The field can hold value of a different type when updating a record. 
 
 ### Syntax
@@ -99,7 +101,7 @@ The following example updates multiple fields of a record.Try the following in E
 
 ```
 
-## Types alias
+## Type alias
 
 Type alias defines a schema for a record. In other words, a type alias defines which fields can the record store and the type of value these fields can store. So programmer will not make mistake of missing any specific attribute while assigning values for example if developer2 have only name by mistake if location is not assigned ,compiler will not give error.
 
