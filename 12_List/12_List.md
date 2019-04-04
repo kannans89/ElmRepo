@@ -62,6 +62,8 @@ Some common operations on a List are given below :
 | 10  |append : List a -> List a -> List a| merges two lists together
 | 11  |range : Int -> Int -> List Int| return a list of numbers from start to  end
 | 12  |filter : (a -> Bool) -> List a -> List a| filters list of values from input list
+| 13  |head : List a -> Maybe.Maybe a| returns the first element from list
+| 14  |tail : : List a -> Maybe.Maybe (List a)| returns all elements except the head
 
 ### isEmpty
 This function returns true if a list is empty
@@ -319,6 +321,82 @@ List.range start_range end_range
 
 ```
 
+## filter
+
+This function filters a set of values from input list.Keep only the values that pass the test.
+
+**Syntax**
+
+```javascript
+List.filter test_function input_list
+```
+
+```elm
+> List.filter
+<function> : (a -> Bool) -> List a -> List a
+```
+
+**Illustration**
+
+Following example filters all even numbers from an input list
+
+```javascript
+> List.filter (\n -> n%2==0) [10,20,30,55]
+[10,20,30] : List Int
+
+```
+
+## head
+
+This function returns the first element from input list.
+
+**Syntax**
+
+```javascript
+List.head  input_list
+```
+
+```elm
+> List.head
+<function> : List a -> Maybe.Maybe a
+```
+
+**Illustration**
+
+
+```javascript
+> List.head [10,20,30,40]
+Just 10 : Maybe.Maybe number
+> List.head []
+Nothing : Maybe.Maybe a
+```
+
+## tail
+
+This function returns all elements after first in the list.
+
+**Syntax**
+
+```javascript
+List.tail  input_list
+```
+
+```elm
+> List.tail
+<function> : List a -> Maybe.Maybe (List a)
+```
+
+**Illustration**
+
+```javascript
+> List.tail [10,20,30,40,50]
+Just [20,30,40,50] : Maybe.Maybe (List number)
+> List.tail [10]
+Just [] : Maybe.Maybe (List number)
+> List.tail []
+Nothing : Maybe.Maybe (List a)
+```
+
 ## using the cons operator
 
 The cons operator ( :: ) adds an element to the front of a list. 
@@ -371,4 +449,5 @@ False : Bool
 
 ```
 
-## How to access elements in a list??
+<!-- 
+## How to access elements in a list?? -->
