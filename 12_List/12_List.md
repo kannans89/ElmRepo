@@ -9,12 +9,14 @@ The List, Tuples and Record data structures can be used to store a collection of
 A List is a collection of homogeneous values. The values in a list must all be of the same data type.  
 
 ### Syntax
+
 ```javascript
 List_name = [value1,value2,value3.....valuen]
 ```
 
-### Illustration 
-The following example shows how to use a List in Elm. Try this example in 
+### Illustration
+
+The following example shows how to use a List in Elm. Try this example in
 
 ```javascript
 
@@ -44,7 +46,22 @@ But the 2nd is:
 ```
 
 ## List operations
-Some common operations on a List are given below : 
+Some common operations on a List are given below :
+
+|Sr No |  method    | description|
+|:----:|:----------|:-------|
+| 1  |isEmpty : List a -> Bool| checks if list is empty
+| 2  |reverse : List a -> Bool| reverses input list
+| 3  |length :  List a -> Int| returns size of the list
+| 4  |maximum : List comparable -> Maybe.Maybe comparable| returns maximum value
+| 5 |minimum : List comparable -> Maybe.Maybe comparable| returns minimum value
+| 6  |sum : List number -> number| returns sum of all elements in list
+| 7  |product :  List number -> number| checks if list is empty
+| 8 |sort : List comparable -> List comparable| sorts list in ascending order
+| 9  |concat : List (List a) -> List a|merges a bunch of list into one
+| 10  |append : List a -> List a -> List a| merges two lists together
+| 11  |range : Int -> Int -> List Int| return a list of numbers from start to  end
+| 12  |filter : (a -> Bool) -> List a -> List a| filters list of values from input list
 
 ### isEmpty
 This function returns true if a list is empty
@@ -125,10 +142,12 @@ This function returns the maximum element in a non-empty list.
 List.maximum list_name
 ```
 type the following in elm repl
+
 ```elm
 > List.maximum
 <function> : List comparable -> Maybe.Maybe comparable
 ```
+
 **Illustration**
 
 ```javascript
