@@ -111,6 +111,13 @@ update msg {input, messages} =
 
 ```
 
+|Sr No |  method    | Signature| Description
+|:----:|:----------|:-------|:------------|
+| 1| WebSocket.listen|listen : String -> (String -> msg) -> Sub msg|Subscribe to any incoming messages on a websocket.
+|2|WebSocket.send |send : String -> String -> Cmd msg|Send a wss request to a server address .It is important that you are also subscribed to this address with listen . If you are not, the web socket will be created to send one message and then closed. 
+
+
+
 ##  Subscription
 
 Subscription function takes in the model object. To receive the messages from webscoket server we call `WebSocket.listen` passing in
