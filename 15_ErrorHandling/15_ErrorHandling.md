@@ -2,7 +2,7 @@
 
 <!-- https://hackernoKon.com/error-handling-in-elm-7ffaf9ff3f8 -->
 
-modify the english here (copy past form above) 
+<!-- modify the english here (copy past form above)  -->
 When writing Elm apps you’ll inevitably run across a situation when you need to handle a non-happy path situation. Your first intuition may be to look for the strategy that you used on that one Javascript project, but that other way may not be available to you with Elm.
 
 Commaon way to hanlde error are using 
