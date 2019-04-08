@@ -2,12 +2,15 @@
 
 <!-- https://hackernoKon.com/error-handling-in-elm-7ffaf9ff3f8 -->
 
-<!-- modify the english here (copy past form above)  -->
-When writing Elm apps you’ll inevitably run across a situation when you need to handle a non-happy path situation. Your first intuition may be to look for the strategy that you used on that one Javascript project, but that other way may not be available to you with Elm.
+An error is any unexpected condition in a program. Errors can occur either at compile-time or runtime.Compile time errors occur during the compilation of a program (E.g. error in the program's syntax) while runtime errors occur during the program's execution. 
+Unlike other programming languages, Elm does not throw runtime errors.
 
-Commaon way to hanlde error are using 
-1. MayBe
-2. Result
+Consider an application that accepts the age of a user. The application should throw an error if the age is zero or negative. In this case,the Elm application can use the concept of error handling to explicitly raise an error at runtime if the user enters zero or a negative value as age. Error handling specifies the course of action if anything unexpected happens during the program's execution.
+
+
+The Elm programming language handles errors in the following ways-  
+1. MayBe 
+2. Result 
 
 <!-- https://www.linkedin.com/learning/web-development-with-elm/maybe-and-the-result-data-types -->
 
@@ -16,28 +19,46 @@ Commaon way to hanlde error are using
 
 
  ## MayBe
+Consider the search feature in an application. The search function returns related data if the search keyword is found else does not return anything.  This use case can be implemented in Elm using the MayBe type.   
 
-<!-- Rephrase this 
-https://learning.oreilly.com/library/view/web-applications-with/9781484226100/html/434702_1_En_4_Chapter.xhtml
--->
- In JavaScript and other languages, a null value may be returned by functions, often causing runtime errors. In Elm we have Maybe, which can represent values that exist or do not exist. The type Maybe is a union type itself, with the members Just a and Nothing. The latter is the equivalent of null in other languages. Just means that there is a valid value, and it is the argument to the Just constructor that returns a Maybe.
+
+### Syntax
+
+```elm
+ variable_name:MayBe data_type
+```
+
+A variable of type MayBe can contain either of the following values- 
+a. Just some_Value : This is used if there valid data 
+b. Nothing : This is used if the value is absent or unknown.Nothing is equivalent to null in other programmming languages.
+
+### Illustration
+
+The following example shows how to use MayBe type with variables and function.  
+
+Step 1: Create a MayBeDemo.elm file and add the following code to it-
 
   ```elm
 --  MayBeDemo.elm
 module MayBeDemo exposing(..)
 import Maybe 
 
+--declaring  a MayBe variable and assigning value to it
 userName : Maybe String 
 userName = Just "Mohtashim"
 
+--declaring  a MayBe variable and assigning value to it
 userAge :Maybe Int
 userAge = Just 20
 
+--declaring  a MayBe variable and assigning value to it
 userSalary:Maybe Float
 userSalary = Nothing
 
-
+--declaring  a custom type
 type Country = India | China | SriLanka 
+
+--defining a function that takes a String parameter as input and returns a value of type MayBe  
 
 getCountryFromString : String -> Maybe Country
 getCountryFromString p =
@@ -54,7 +75,7 @@ getCountryFromString p =
 
   ```
 
-import the module in elm repl and execute as following
+Step 2: Import the module in elm repl and execute as given below-
 
 ```elm
  E:\ElmWorks\ErroApp> elm repl
@@ -74,21 +95,32 @@ Just India : Maybe.Maybe MayBeDemo.Country
 Nothing : Maybe.Maybe MayBeDemo.Country
 
 ```
+The function checks if the value passed to the function is India or China or Srilanka. If the parameter's value does not match any of these, it returns nothing.  
+
 
 ## Result
 
-The Maybe type can help with simple functions that may fail, but it does not tell you why it failed. Imagine if a compiler just said Nothing if anything was wrong with your program. Good luck figuring out what went wrong!
+Consider an example, where the application needs to validate some condition and raise an error if the condition is not satisfied. The Result type can be used to achieve this. The Result type should be used if the application wants to explicitly raise an error and return details about what went wrong.  
+
+
+### Syntax
+
+The Result type declaration takes two parameters- the data type of the error (ususally String ) and the data type of the result to be returned if everything goes fine.  
 
 ```elm
- -- Syntax
- type Result error value
-  = Ok value
-  | Err error
+  type Result error_type data_value_type
+  = Ok data_value
+  | Err error_message
 ```
+The Result type returns either of the following values-
+- OK some_value - Represents result to be returned
+- Err - Represents the error message to be returned if the expected conditions are not satisfied.
 
-## Exmaple in repl
 
-String.toInt function returns Integer value if proper answer otherwise String values which contains error messe.
+### Illustration
+
+Try the following example in the Elm REPL-
+
 
 ```elm
 > String.toInt
@@ -101,8 +133,14 @@ Ok 10 : Result.Result String Int
 Err "could not convert string 'a' to an Int" : Result.Result String Int
 
 ```
+The String.toInt function returns Integer value if proper answer otherwise String values which contains error message.
 
-Let us create a funciton and understand the same concept
+
+### Illustration
+
+The following example accepts age as a parameter. The function returns the age if it is between 0 and 135 else it returns an appropriate error message. 
+
+Step 1: Create a ResultDemo.elm file and add the following code to it.
 
 ```elm
 --ResultDemo.elm
@@ -125,7 +163,7 @@ isReasonableAge input =
         Ok age
 ```
 
-import the module in elm package and execute as follwign
+Step2 : Import the module in elm package and execute as given below- 
 
 ```elm
 E:\ElmWorks\ElmRepo\15_ErrorHandling\15_Code> elm repl
