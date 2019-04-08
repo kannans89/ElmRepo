@@ -2,12 +2,16 @@
 
 <!-- https://hackernoKon.com/error-handling-in-elm-7ffaf9ff3f8 -->
 
-modify the english here (copy past form above) 
-When writing Elm apps you’ll inevitably run across a situation when you need to handle a non-happy path situation. Your first intuition may be to look for the strategy that you used on that one Javascript project, but that other way may not be available to you with Elm.
 
-Commaon way to hanlde error are using 
-1. MayBe
-2. Result
+An error is any unexpected condition in a program. Errors can occur either at compile-time or runtime.Compile time errors occur during the compilation of a program (E.g. error in the program's syntax) while runtime errors occur during the program's execution. 
+Unlike other programming languages, Elm does not throw runtime errors.
+
+Consider an application that accepts the age of a user. The application should throw an error if the age is zero or negative. In this case,the Elm application can use the concept of error handling to explicitly raise an error at runtime if the user enters zero or a negative value as age. Error handling specifies the course of action if anything unexpected happens during the program's execution.
+
+
+The Elm programming language handles errors in the following ways-  
+1. MayBe 
+2. Result 
 
 <!-- https://www.linkedin.com/learning/web-development-with-elm/maybe-and-the-result-data-types -->
 
@@ -16,7 +20,7 @@ Commaon way to hanlde error are using
 
 
  ## MayBe
-
+Unlike other programming languages Elm does not return null. Elm 
 <!-- Rephrase this 
 https://learning.oreilly.com/library/view/web-applications-with/9781484226100/html/434702_1_En_4_Chapter.xhtml
 -->
