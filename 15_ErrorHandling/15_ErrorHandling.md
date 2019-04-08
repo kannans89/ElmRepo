@@ -101,18 +101,27 @@ The function checks if the value passed to the function is India or China or Sri
 
 ## Result
 
-The Maybe type can help with simple functions that may fail, but it does not tell you why it failed. Imagine if a compiler just said Nothing if anything was wrong with your program. Good luck figuring out what went wrong!
+Consider an example, where the application needs to validate some condition and raise an error if the condition is not satisfied. The Result type can be used to achieve this. The Result type should be used if the application wants to explicitly raise an error and return details about what went wrong.  
+
+
+### Syntax
+
+The Result type declaration takes two parameters- the data type of the error (ususally String ) and the data type of the result to be returned if everything goes fine.  
 
 ```elm
- -- Syntax
- type Result error value
-  = Ok value
-  | Err error
+  type Result error_type data_value_type
+  = Ok data_value
+  | Err error_message
 ```
+The Result type returns either of the following values-
+- OK some_value - Represents result to be returned
+- Err - Represents the error message to be returned if the expected conditions are not satisfied.
 
-## Exmaple in repl
 
-String.toInt function returns Integer value if proper answer otherwise String values which contains error messe.
+### Illustration
+
+Try the following example in the Elm REPL-
+
 
 ```elm
 > String.toInt
@@ -125,8 +134,14 @@ Ok 10 : Result.Result String Int
 Err "could not convert string 'a' to an Int" : Result.Result String Int
 
 ```
+The String.toInt function returns Integer value if proper answer otherwise String values which contains error message.
 
-Let us create a funciton and understand the same concept
+
+### Illustration
+
+The following example accepts age as a parameter. The function returns the age if it is between 0 and 135 else it returns an appropriate error message. 
+
+Step 1: Create a ResultDemo.elm file and add the following code to it.
 
 ```elm
 --ResultDemo.elm
@@ -149,7 +164,7 @@ isReasonableAge input =
         Ok age
 ```
 
-import the module in elm package and execute as follwign
+Step2 : Import the module in elm package and execute as given below- 
 
 ```elm
 E:\ElmWorks\ElmRepo\15_ErrorHandling\15_Code> elm repl
