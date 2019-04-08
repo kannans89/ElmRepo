@@ -89,7 +89,29 @@ False : Bool
 True : Bool
 ```  
 
+## Custom Types
+
+Elm supports creating user defined types.For example consider a payment application. The application needs to store different modes of payment-credit card, debit card and net-banking. This can be achieved by defining a custom type and restricting its value to the three acceptable modes of payments.
+The following example shows how to make a custom type  
+
+```elm
+> type PaymentMode = CreditCard|NetBanking|DebitCard
+> payment1 = CreditCard
+CreditCard : Repl.PaymentMode
+> payment2 = DebitCard
+DebitCard : Repl.PaymentMode
+> payment3 = UPI
+-- NAMING ERROR ---------------------------------------------- repl-temp-000.elm
+
+Cannot find variable `UPI`
+
+7| payment3 = UPI
+```
+
+In the above example we created a `PaymentMode` custom type . Variables payment1 and payment2 are assigned to PaymentMode values.If the value assigned to the variable does not match any of the values defined by the `PaymentMode` type, the application will throw a syntax error .
+
 ## Structured Data types
+
 Structured data types can be used to store multiple values in a structured format.Elm supports the following structured data types:  
 
 - Tuple

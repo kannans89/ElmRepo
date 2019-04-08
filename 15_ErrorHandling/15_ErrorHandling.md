@@ -112,6 +112,7 @@ The Result type declaration takes two parameters- the data type of the error (us
   = Ok data_value
   | Err error_message
 ```
+
 The Result type returns either of the following values-
 - Ok some_value - Represents result to be returned
 - Err - Represents the error message to be returned if the expected conditions are not satisfied.
@@ -120,7 +121,6 @@ The Result type returns either of the following values-
 ### Illustration
 
 Try the following example in the Elm REPL-
-
 
 ```elm
 > String.toInt
@@ -147,7 +147,7 @@ Step 1: Create a ResultDemo.elm file and add the following code to it.
 module ResultDemo exposing(..)
 
 userId : Result String Int
-userId = Ok 10 
+userId = Ok 10
 
 emailId : Result String Int
 emailId = Err "Not valid emailId"
