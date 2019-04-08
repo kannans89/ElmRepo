@@ -129,6 +129,23 @@ subscriptions model =
 WebSocket.listen echoServer NewMessage
 ```
 
+## main
+
+The main function is the entry point to the elm application as is shown below.
+
+```elm
+main =
+  Html.program
+    { init = init
+    , view = view
+    , update = update
+    , subscriptions = subscriptions
+    }
+
+
+
+```
+
 ### Putting it all together
 
 Step 1: Create a directory,SubscriptionApp and add a file,SubscriptionDemo.elm to it.

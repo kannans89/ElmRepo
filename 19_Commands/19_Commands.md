@@ -36,7 +36,8 @@ api calls etc.The way it should be done is through commands.
 A command is triggered by a message.We will see an exmaple-->
 
 ## Illustration 
-The following example,makes a request to an API and displays the result from the API.The application accepts a number from the user , passes itr to the Numbers API. This API returns facts related to the number.   
+
+The following example,makes a request to an API and displays the result from the API.The application accepts a number from the user , passes itr to the Numbers API. This API returns facts related to the number.
 
 The various components of the application are as follows:  
 
@@ -64,6 +65,7 @@ view model =
 
 ```
 ## Model
+
 The Model represents the value entered by the user  and the result that will be returned by the API.   
 
 ```elm
@@ -77,6 +79,7 @@ type alias Model =
 
 ## Message
 <!-- review this-->
+
 The application has the following three messages- 
 
 ```elm
@@ -87,6 +90,10 @@ type Msg
   | NewFactArrived (Result Http.Error String)
 
 ```
+
+Onclick of the button `ShowFacts` message is passed to update method.When user types on textbox `Input` message is passsed to update method.Finally if
+Http server response comes `NewFactArrived` message will be passed to update.
+
 ## Define update method
 
 Note the update method returns a tuple which have model and command object.When user click on button the command passed is ShowFacts,
@@ -110,14 +117,15 @@ update msg model =
 
 ```
 
-the helper funciton to make http call to numberspi is shown below
+## Http Server
+
+the helper function to make http call to numberspi is shown below
 The input parameter is String which is the number to search and the return type is command `Cmd Msg`
 
 ```elm
 getRadmonNumberFromAPI : String->Cmd Msg
 getRadmonNumberFromAPI newNo =
   let
-    
     url =
       "http://numbersapi.com/"++newNo
   in
@@ -128,8 +136,6 @@ getRadmonNumberFromAPI newNo =
 |:----:|:----------|:-------|:------------|
 | 1| Http.getString|getString : String -> Request String|Create a GET request and interpret the response body as a String.
 |2|Http.send |send:(Result Error a -> msg) -> Request a -> Cmd msg|Send a Http request
-
-
 
 ## Define main
 
