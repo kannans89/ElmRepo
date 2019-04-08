@@ -113,7 +113,7 @@ The Result type declaration takes two parameters- the data type of the error (us
   | Err error_message
 ```
 The Result type returns either of the following values-
-- OK some_value - Represents result to be returned
+- Ok some_value - Represents result to be returned
 - Err - Represents the error message to be returned if the expected conditions are not satisfied.
 
 
