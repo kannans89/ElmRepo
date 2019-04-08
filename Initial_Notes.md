@@ -119,3 +119,57 @@ packagemanager
 string
 function to have pipeoperator
 string --> string function , repel and also with variable
+
+NewCourse Details
+
+Dear Mohtashim sir ,
+
+ Allow me to upgrade the ES6 course . The course could have 4 sections
+
+  1. ES6
+  2. ES7
+  3. ES8
+  4. ES9
+
+## ES6 / ECMAScript 2015
+
+1. Syntax Changes
+   1. Let & Const
+   2. Arrow Function
+   3. Default Function Parameters
+   4. Rest Parameters
+   5. Spread Operators
+   6. Destructuring
+   7. Template Literals
+   8. Octal and Binary Literal
+   9. Object Literal Extension
+2.  Modules
+3.  Class
+4.  Symbols
+5.  Iterator & Generator
+6.  Promises
+7.  Maps & sets
+8.  Built in Objects
+9.  Reflect API
+10. Proxy API
+
+# ES7 / ECMAScript 2016
+
+1. Exponentiation Operator
+2. Array:includes()
+3. Rest Parameter destructuring
+  
+# ES8 / ECMAScript 2017
+
+1. Async and Await
+2. Padding a String
+3. Trailing commas
+4. Objects:entries() and values()
+
+# ES9 / ECMAScript 2018
+
+1. Async Iteration
+2. Rest/Spread Properties
+3. Promise:finally()
+4. Template Literal Revision
+5. Regular Expression features
