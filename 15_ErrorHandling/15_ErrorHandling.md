@@ -146,6 +146,12 @@ Step 1: Create a ResultDemo.elm file and add the following code to it.
 --ResultDemo.elm
 module ResultDemo exposing(..)
 
+userId : Result String Int
+userId = Ok 10 
+
+emailId : Result String Int
+emailId = Err "Not valid emailId"
+
 isReasonableAge : String -> Result String Int
 isReasonableAge input =
   case String.toInt input of
@@ -171,6 +177,11 @@ E:\ElmWorks\ElmRepo\15_ErrorHandling\15_Code> elm repl
  :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
 --------------------------------------------------------------------------------
 > import ResultDemo exposing (..)
+
+> userId
+Ok 10 : Result.Result String Int
+> emailId
+Err "Not valid emailId" : Result.Result String Int
 
 > isReasonableAge "10"
 Ok 10 : Result.Result String Int

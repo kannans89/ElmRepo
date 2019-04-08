@@ -7,7 +7,13 @@ module ResultDemo exposing(..)
 --main =
 -- invoke text function 
  --text <|toString  (isReasonableAge "abc")
+import Result
 
+userId : Result String Int
+userId = Ok 10 
+
+emailId : Result String Int
+emailId = Err "Not valid emailId" 
 
 isReasonableAge : String -> Result String Int
 isReasonableAge input =
