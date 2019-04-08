@@ -10,8 +10,8 @@ The above diagram shows project folder HelloApp and terminal opened in vscode.
 
 ## Step 2: Install the necessary elm packages
 
-The package manager in elm is `elm-package`.  
-Install the `elm-lang/html` package. This package will help us to display output of elm code in the browser.  
+The package manager in elm is `elm-package`.Install the `elm-lang/html` package. This package will help us to display output of elm code in the browser.   
+
 Traverse to the HelloApp project folder by right clicking on File → Open in command prompt in VSCode. Execute the following command in the terminal window:
 <!--update the project path-->
 `C:\Users\dell\Elm\HelloApp> elm-package install elm-lang/html`
@@ -95,7 +95,7 @@ Example
 Elm provides no braces to indicate blocks of code for function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced. All statements within a block must be indented the same amount. For example −
 
 ```elm
-module If exposing (..)
+module ModuleIf exposing (..)
 x = 0
 
 function1=
@@ -109,8 +109,8 @@ function1=
 However, the following block generates an error − 
 
 ```elm
--- File If.elm
-module If exposing (..)
+-- File ModuleIf.elm
+module ModuleIf exposing (..)
 x = 0
 
 function1=
@@ -124,7 +124,7 @@ else         --else indentation not correct
 Thus, in Elm all the continuous lines indented with same number of spaces would form a block.
 
 ```elm
-> import If exposing(..) -- importing module from file
+> import ModuleIf exposing(..) -- importing module from file
 >function1  -- executing function from module
 -- SYNTAX PROBLEM ---------------------------------------------------
 
