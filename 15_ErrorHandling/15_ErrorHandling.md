@@ -20,28 +20,46 @@ The Elm programming language handles errors in the following ways-
 
 
  ## MayBe
-Unlike other programming languages Elm does not return null. Elm 
-<!-- Rephrase this 
-https://learning.oreilly.com/library/view/web-applications-with/9781484226100/html/434702_1_En_4_Chapter.xhtml
--->
- In JavaScript and other languages, a null value may be returned by functions, often causing runtime errors. In Elm we have Maybe, which can represent values that exist or do not exist. The type Maybe is a union type itself, with the members Just a and Nothing. The latter is the equivalent of null in other languages. Just means that there is a valid value, and it is the argument to the Just constructor that returns a Maybe.
+Consider the search feature in an application. The search function returns related data if the search keyword is found else does not return anything.  This use case can be implemented in Elm using the MayBe type.   
+
+
+### Syntax
+
+```elm
+ variable_name:MayBe data_type
+```
+
+A variable of type MayBe can contain either of the following values- 
+a. Just some_Value : This is used if there valid data 
+b. Nothing : This is used if the value is absent or unknown.Nothing is equivalent to null in other programmming languages.
+
+### Illustration
+
+The following example shows how to use MayBe type with variables and function.  
+
+Step 1: Create a MayBeDemo.elm file and add the following code to it-
 
   ```elm
 --  MayBeDemo.elm
 module MayBeDemo exposing(..)
 import Maybe 
 
+--declaring  a MayBe variable and assigning value to it
 userName : Maybe String 
 userName = Just "Mohtashim"
 
+--declaring  a MayBe variable and assigning value to it
 userAge :Maybe Int
 userAge = Just 20
 
+--declaring  a MayBe variable and assigning value to it
 userSalary:Maybe Float
 userSalary = Nothing
 
-
+--declaring  a custom type
 type Country = India | China | SriLanka 
+
+--defining a function that takes a String parameter as input and returns a value of type MayBe  
 
 getCountryFromString : String -> Maybe Country
 getCountryFromString p =
@@ -58,7 +76,7 @@ getCountryFromString p =
 
   ```
 
-import the module in elm repl and execute as following
+Step 2: Import the module in elm repl and execute as given below-
 
 ```elm
  E:\ElmWorks\ErroApp> elm repl
@@ -78,6 +96,8 @@ Just India : Maybe.Maybe MayBeDemo.Country
 Nothing : Maybe.Maybe MayBeDemo.Country
 
 ```
+The function checks if the value passed to the function is India or China or Srilanka. If the parameter's value does not match any of these, it returns nothing.  
+
 
 ## Result
 
