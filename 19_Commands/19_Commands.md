@@ -48,7 +48,7 @@ The Http Module of Elm is used to create and send HTTP requests. This module is 
 ### API
 In this example the application will communicate with the Numbers API - "http://numbersapi.com/". This API is available freely.
 
-## View
+### View
 The application's view contains a textbox and a button.
 
 ```elm
@@ -64,7 +64,7 @@ view model =
 
 
 ```
-## Model
+### Model
 
 The Model represents the value entered by the user  and the result that will be returned by the API.   
 
@@ -77,13 +77,13 @@ type alias Model =
 
 ```
 
-## Message
-<!-- review this-->
+### Message
 
-The application has the following three messages- 
+The application has the following three messages- ShowFacts,Input and NewFactArrived.
+
+On click of the `Show Facts` button `ShowFacts` message is passed to the update method.When the user types some value in the textbox the `Input` message is passsed to update method.Finally when the Http server response is received the `NewFactArrived` message will be passed to update.
 
 ```elm
-
 type Msg
   = ShowFacts
   |Input String
@@ -91,13 +91,9 @@ type Msg
 
 ```
 
-Onclick of the button `ShowFacts` message is passed to update method.When user types on textbox `Input` message is passsed to update method.Finally if
-Http server response comes `NewFactArrived` message will be passed to update.
+### Update
 
-## Define update method
-
-Note the update method returns a tuple which have model and command object.When user click on button the command passed is ShowFacts,
-if showFacts then update method returns `(model, getRadmonNumberFromAPI model.input)`
+The update method returns a tuple which contains the model and command objects.When the user clicks on the `Show Facts` button the Message is passed to the update which then calls the NumbersAPI.
 
 ```elm
 update : Msg -> Model -> (Model, Cmd Msg)
@@ -117,10 +113,9 @@ update msg model =
 
 ```
 
-## Http Server
+### Helper Function 
 
-the helper function to make http call to numberspi is shown below
-The input parameter is String which is the number to search and the return type is command `Cmd Msg`
+The helper function `getRandomNumberFromAPI` invokes the NumbersAPI and passes to it the number entered by the user. The result returned by the API is used to update the model.  
 
 ```elm
 getRadmonNumberFromAPI : String->Cmd Msg
@@ -137,7 +132,8 @@ getRadmonNumberFromAPI newNo =
 | 1| Http.getString|getString : String -> Request String|Create a GET request and interpret the response body as a String.
 |2|Http.send |send:(Result Error a -> msg) -> Request a -> Cmd msg|Send a Http request
 
-## Define main
+### main
+This is the entry point of the Elm project. 
 
 ```elm
 
@@ -151,13 +147,11 @@ main =
 
 ```
 
-## Example
+### Putting it all together
 
-step 1: create folder CommandApp and file CommandDemo.elm
-step 2: 
-Install http module using command `elm package install elm-lang/http`
-
-step 3: Type the contents for CommandDemo.elm as shown
+Step 1: create folder CommandApp and file CommandDemo.elm
+Step 2: Install the http module using command `elm package install elm-lang/http`
+Step 3: Type the contents for CommandDemo.elm as shown below-
 
 ```elm
 
@@ -240,12 +234,7 @@ subscriptions model =
 -- HTTP
 
 
-getRadmon
-
-
-
-
-FromAPI : String->Cmd Msg
+getRadmonNumberFromAPI : String->Cmd Msg
 getRadmonNumberFromAPI newNo =
   let
     url =
@@ -255,6 +244,6 @@ getRadmonNumberFromAPI newNo =
 
 ```
 
-step 4: Fire the command `C:\Users\dell\elm\CommandApp> elm make .\CommandDemo.elm` this will generate the html file as shown below.
+Step 4: Fire the command `C:\Users\dell\elm\CommandApp> elm make .\CommandDemo.elm` this will generate the html file as shown below.
 
 !["Commands"](https://github.com/kannans89/ElmRepo/blob/master/images/19_numberapi.PNG?raw=true)
